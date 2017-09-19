@@ -1,0 +1,1240 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "hx8p-rrcf",
+      "name" : "INFORME EVAS 2015 CONSOLIDADO departamento del Meta",
+      "attribution" : "Gobernacion del Meta",
+      "averageRating" : 0,
+      "category" : "Agricultura y Desarrollo Rural",
+      "createdAt" : 1504238758,
+      "displayType" : "table",
+      "downloadCount" : 3,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1504238972,
+      "licenseId" : "CC_40_BY_SA",
+      "locale" : "en_US",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 26705112,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1504238989,
+      "publicationGroup" : 14435260,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1504238782,
+      "rowsUpdatedBy" : "3gpj-byky",
+      "tableId" : 14435260,
+      "totalTimesRated" : 0,
+      "viewCount" : 14,
+      "viewLastModified" : 1504238989,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 318243831,
+        "name" : "DEPARTAMENTO",
+        "dataTypeName" : "text",
+        "fieldName" : "departamento",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 52698405,
+        "width" : 244,
+        "cachedContents" : {
+          "largest" : "META  ",
+          "non_null" : 522,
+          "null" : 2,
+          "top" : [ {
+            "item" : "META",
+            "count" : 20
+          }, {
+            "item" : "META ",
+            "count" : 19
+          }, {
+            "item" : "META  ",
+            "count" : 18
+          } ],
+          "smallest" : "META"
+        },
+        "format" : { }
+      }, {
+        "id" : 318243832,
+        "name" : "MUNICIPIO",
+        "dataTypeName" : "text",
+        "fieldName" : "municipio",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 52698406,
+        "width" : 208,
+        "cachedContents" : {
+          "largest" : "VISTA HERMOSA",
+          "non_null" : 524,
+          "null" : 0,
+          "top" : [ {
+            "item" : "PUERTO CONCORDIA",
+            "count" : 20
+          }, {
+            "item" : "PUERTO RICO",
+            "count" : 19
+          }, {
+            "item" : "PUERTO RICO ",
+            "count" : 18
+          }, {
+            "item" : "LEJANIAS",
+            "count" : 17
+          }, {
+            "item" : "URIBE",
+            "count" : 16
+          }, {
+            "item" : "FUENTE DE ORO",
+            "count" : 15
+          }, {
+            "item" : "MESETAS",
+            "count" : 14
+          }, {
+            "item" : "CUMARAL ",
+            "count" : 13
+          }, {
+            "item" : "EL CALVARIO",
+            "count" : 12
+          }, {
+            "item" : "RESTREPO",
+            "count" : 11
+          }, {
+            "item" : "SAN JUANITO ",
+            "count" : 10
+          }, {
+            "item" : "VILLAVICENCIO",
+            "count" : 9
+          }, {
+            "item" : "BARRANCA DE UPIA ",
+            "count" : 8
+          }, {
+            "item" : "CASTILLA LA NUEVA ",
+            "count" : 7
+          }, {
+            "item" : "EL DORADO",
+            "count" : 6
+          }, {
+            "item" : "EL CASTILLO",
+            "count" : 5
+          }, {
+            "item" : "GUAMAL",
+            "count" : 4
+          }, {
+            "item" : "SAN MARTIN ",
+            "count" : 3
+          }, {
+            "item" : "CUBARAL",
+            "count" : 2
+          }, {
+            "item" : "ACACIAS",
+            "count" : 1
+          } ],
+          "smallest" : "ACACIAS"
+        },
+        "format" : { }
+      }, {
+        "id" : 318243833,
+        "name" : "CULTIVO",
+        "dataTypeName" : "text",
+        "fieldName" : "cultivo",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 52698407,
+        "width" : 184,
+        "cachedContents" : {
+          "largest" : "ZAPOTE",
+          "non_null" : 524,
+          "null" : 0,
+          "top" : [ {
+            "item" : "ARROZ SECANO MECANIZADO ",
+            "count" : 20
+          }, {
+            "item" : "CACAO",
+            "count" : 19
+          }, {
+            "item" : "CAÑA PANELERA",
+            "count" : 18
+          }, {
+            "item" : "CAUCHO",
+            "count" : 17
+          }, {
+            "item" : "MAIZ TECNIFICADO",
+            "count" : 16
+          }, {
+            "item" : "MAIZ TRADICIONAL",
+            "count" : 15
+          }, {
+            "item" : "MARACUYA",
+            "count" : 14
+          }, {
+            "item" : "PALMA DE ACEITE",
+            "count" : 13
+          }, {
+            "item" : "PAPAYA",
+            "count" : 12
+          }, {
+            "item" : "PATILLA",
+            "count" : 11
+          }, {
+            "item" : "PIÑA",
+            "count" : 10
+          }, {
+            "item" : "PLATANO",
+            "count" : 9
+          }, {
+            "item" : "YUCA",
+            "count" : 8
+          }, {
+            "item" : "GUANABANA",
+            "count" : 7
+          }, {
+            "item" : "GUAYABA",
+            "count" : 6
+          }, {
+            "item" : "FRIJOL",
+            "count" : 5
+          }, {
+            "item" : "AGUACATE",
+            "count" : 4
+          }, {
+            "item" : "CAFÉ",
+            "count" : 3
+          }, {
+            "item" : "CITRICOS",
+            "count" : 2
+          }, {
+            "item" : "ARROZ RIEGO",
+            "count" : 1
+          } ],
+          "smallest" : "AGUACATE"
+        },
+        "format" : { }
+      }, {
+        "id" : 318243834,
+        "name" : "PERIODO",
+        "dataTypeName" : "text",
+        "fieldName" : "periodo",
+        "position" : 4,
+        "renderTypeName" : "text",
+        "tableColumnId" : 52698408,
+        "width" : 184,
+        "cachedContents" : {
+          "largest" : "2015B",
+          "non_null" : 524,
+          "null" : 0,
+          "top" : [ {
+            "item" : "2015A",
+            "count" : 20
+          }, {
+            "item" : "2015",
+            "count" : 19
+          }, {
+            "item" : "2015B",
+            "count" : 18
+          } ],
+          "smallest" : "2015"
+        },
+        "format" : { }
+      }, {
+        "id" : 318243835,
+        "name" : "SEMESTRE",
+        "dataTypeName" : "text",
+        "fieldName" : "semestre",
+        "position" : 5,
+        "renderTypeName" : "text",
+        "tableColumnId" : 52698409,
+        "width" : 196,
+        "cachedContents" : {
+          "largest" : "B",
+          "non_null" : 524,
+          "null" : 0,
+          "top" : [ {
+            "item" : "A",
+            "count" : 20
+          }, {
+            "item" : "AÑO",
+            "count" : 19
+          }, {
+            "item" : "B",
+            "count" : 18
+          } ],
+          "smallest" : "A"
+        },
+        "format" : { }
+      }, {
+        "id" : 318243836,
+        "name" : "Area Sembrada (ha)",
+        "dataTypeName" : "number",
+        "fieldName" : "area_sembrada_ha",
+        "position" : 6,
+        "renderTypeName" : "number",
+        "tableColumnId" : 52698410,
+        "width" : 316,
+        "cachedContents" : {
+          "largest" : "45000.00",
+          "non_null" : 524,
+          "average" : "805.25",
+          "null" : 0,
+          "top" : [ {
+            "item" : "5",
+            "count" : 20
+          }, {
+            "item" : "3",
+            "count" : 19
+          }, {
+            "item" : "100",
+            "count" : 18
+          }, {
+            "item" : "30",
+            "count" : 17
+          }, {
+            "item" : "50",
+            "count" : 16
+          }, {
+            "item" : "60",
+            "count" : 15
+          }, {
+            "item" : "40",
+            "count" : 14
+          }, {
+            "item" : "150",
+            "count" : 13
+          }, {
+            "item" : "2500",
+            "count" : 12
+          }, {
+            "item" : "70",
+            "count" : 11
+          }, {
+            "item" : "380",
+            "count" : 10
+          }, {
+            "item" : "400",
+            "count" : 9
+          }, {
+            "item" : "140.00",
+            "count" : 8
+          }, {
+            "item" : "90",
+            "count" : 7
+          }, {
+            "item" : "20",
+            "count" : 6
+          }, {
+            "item" : "10",
+            "count" : 5
+          } ],
+          "smallest" : "0",
+          "sum" : "421951.00"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      }, {
+        "id" : 318243837,
+        "name" : "Area Cosechada (ha)",
+        "dataTypeName" : "number",
+        "fieldName" : "area_cosechada_ha",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 52698411,
+        "width" : 328,
+        "cachedContents" : {
+          "largest" : "32000.00",
+          "non_null" : 523,
+          "average" : "649.6625239005736",
+          "null" : 1,
+          "top" : [ {
+            "item" : "20",
+            "count" : 20
+          }, {
+            "item" : "40",
+            "count" : 19
+          }, {
+            "item" : "5",
+            "count" : 18
+          }, {
+            "item" : "3",
+            "count" : 17
+          }, {
+            "item" : "15",
+            "count" : 16
+          }, {
+            "item" : "10",
+            "count" : 15
+          }, {
+            "item" : "30",
+            "count" : 14
+          }, {
+            "item" : "50",
+            "count" : 13
+          }, {
+            "item" : "80",
+            "count" : 12
+          }, {
+            "item" : "100",
+            "count" : 11
+          }, {
+            "item" : "60",
+            "count" : 10
+          }, {
+            "item" : "150",
+            "count" : 9
+          }, {
+            "item" : "350",
+            "count" : 8
+          }, {
+            "item" : "300",
+            "count" : 7
+          }, {
+            "item" : "70",
+            "count" : 6
+          }, {
+            "item" : "380",
+            "count" : 5
+          }, {
+            "item" : "300.00",
+            "count" : 4
+          }, {
+            "item" : "2200.00",
+            "count" : 3
+          }, {
+            "item" : "420.00",
+            "count" : 2
+          }, {
+            "item" : "15.00",
+            "count" : 1
+          } ],
+          "smallest" : "0",
+          "sum" : "339773.50"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      }, {
+        "id" : 318243838,
+        "name" : "Producción (t)",
+        "dataTypeName" : "number",
+        "fieldName" : "producci_n_t",
+        "position" : 8,
+        "renderTypeName" : "number",
+        "tableColumnId" : 52698412,
+        "width" : 268,
+        "cachedContents" : {
+          "largest" : "960000.0",
+          "non_null" : 524,
+          "average" : "11348.24904580153",
+          "null" : 0,
+          "top" : [ {
+            "item" : "180.0",
+            "count" : 20
+          }, {
+            "item" : "5700.0",
+            "count" : 19
+          }, {
+            "item" : "4620.0",
+            "count" : 18
+          }, {
+            "item" : "75.0",
+            "count" : 17
+          }, {
+            "item" : "6660.0",
+            "count" : 16
+          }, {
+            "item" : "2000.0",
+            "count" : 15
+          }, {
+            "item" : "720.0",
+            "count" : 14
+          }, {
+            "item" : "3000.0",
+            "count" : 13
+          }, {
+            "item" : "990.0",
+            "count" : 12
+          }, {
+            "item" : "7600.0",
+            "count" : 11
+          }, {
+            "item" : "40.0",
+            "count" : 10
+          }, {
+            "item" : "52.0",
+            "count" : 9
+          }, {
+            "item" : "450.0",
+            "count" : 8
+          }, {
+            "item" : "1500.0",
+            "count" : 7
+          }, {
+            "item" : "11000.0",
+            "count" : 6
+          }, {
+            "item" : "2100.0",
+            "count" : 5
+          }, {
+            "item" : "15.0",
+            "count" : 4
+          }, {
+            "item" : "240.0",
+            "count" : 3
+          }, {
+            "item" : "80.0",
+            "count" : 2
+          }, {
+            "item" : "3850.0",
+            "count" : 1
+          } ],
+          "smallest" : "0.0",
+          "sum" : "5946482.5"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      }, {
+        "id" : 318243839,
+        "name" : "Rendimiento (t/ha)",
+        "dataTypeName" : "number",
+        "fieldName" : "rendimiento_t_ha",
+        "position" : 9,
+        "renderTypeName" : "number",
+        "tableColumnId" : 52698413,
+        "width" : 316,
+        "cachedContents" : {
+          "largest" : "46",
+          "non_null" : 522,
+          "average" : "11.76475095785441",
+          "null" : 2,
+          "top" : [ {
+            "item" : "0.9",
+            "count" : 20
+          }, {
+            "item" : "18",
+            "count" : 19
+          }, {
+            "item" : "35",
+            "count" : 18
+          }, {
+            "item" : "6.5",
+            "count" : 17
+          }, {
+            "item" : "6",
+            "count" : 16
+          }, {
+            "item" : "1.5",
+            "count" : 15
+          }, {
+            "item" : "2.5",
+            "count" : 14
+          }, {
+            "item" : "8",
+            "count" : 13
+          }, {
+            "item" : "20",
+            "count" : 12
+          }, {
+            "item" : "2",
+            "count" : 11
+          }, {
+            "item" : "9",
+            "count" : 10
+          }, {
+            "item" : "1.8",
+            "count" : 9
+          }, {
+            "item" : "15",
+            "count" : 8
+          }, {
+            "item" : "5",
+            "count" : 7
+          }, {
+            "item" : "13",
+            "count" : 6
+          }, {
+            "item" : "40",
+            "count" : 5
+          }, {
+            "item" : "16",
+            "count" : 4
+          }, {
+            "item" : "30",
+            "count" : 3
+          }, {
+            "item" : "1",
+            "count" : 2
+          }, {
+            "item" : "4",
+            "count" : 1
+          } ],
+          "smallest" : "0",
+          "sum" : "6141.20"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "Creative Commons Attribution | Share Alike 4.0 International",
+        "logoUrl" : "images/licenses/cc30bysa.png",
+        "termsLink" : "http://creativecommons.org/licenses/by-sa/4.0/legalcode"
+      },
+      "metadata" : {
+        "custom_fields" : {
+          "Información de la Entidad" : {
+            "Municipio" : "Villavicencio",
+            "Nombre de la Entidad" : "Gobernación del Meta",
+            "Orden" : "Territorial",
+            "Sector" : "No Aplica",
+            "Área o dependencia" : "Secretaria de Desarrollo Agroeconomico",
+            "Departamento" : "Meta"
+          },
+          "Información de Datos" : {
+            "Cobertura Geográfica" : "Departamental",
+            "Idioma" : "Español",
+            "Frecuencia de Actualización" : "Anual",
+            "URL Documentación" : "",
+            "Fecha Emisión (aaaa-mm-dd)" : "2017-02-16",
+            "URL Normativa" : ""
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "3gpj-byky",
+        "displayName" : "Gobernación del Meta",
+        "profileImageUrlLarge" : "/api/users/3gpj-byky/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/3gpj-byky/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/3gpj-byky/profile_images/TINY",
+        "roleName" : "editor",
+        "screenName" : "Gobernación del Meta",
+        "rights" : [ "create_datasets", "view_domain", "create_pages", "view_goals", "view_dashboards", "view_story", "view_unpublished_story" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "3gpj-byky",
+        "displayName" : "Gobernación del Meta",
+        "profileImageUrlLarge" : "/api/users/3gpj-byky/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/3gpj-byky/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/3gpj-byky/profile_images/TINY",
+        "roleName" : "editor",
+        "screenName" : "Gobernación del Meta",
+        "rights" : [ "create_datasets", "view_domain", "create_pages", "view_goals", "view_dashboards", "view_story", "view_unpublished_story" ]
+      },
+      "tags" : [ "evas meta agricultura" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 1, "EF0AD584-91C1-4925-A4F5-455F2852AF97", 1, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "ARROZ SECANO MECANIZADO ", "2015A", "A", "900", "900", "4500.0", "5.0" ]
+, [ 2, "E5DD3AA3-A97D-4556-8A63-A23D42B3898E", 2, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "CACAO", "2015", "AÑO", "433", "253", "227.7", "0.9" ]
+, [ 3, "C5627CF8-E7E9-4B53-83B1-EFC1035C1743", 3, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "CAÑA PANELERA", "2015", "AÑO", "70", "55", "165.0", "3" ]
+, [ 4, "92D8B342-E897-497F-8D00-6D32F4F09828", 4, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "CAUCHO", "2015", "AÑO", "14", "14", "16.8", "1.2" ]
+, [ 5, "4E6613F0-3785-4CFF-A4D3-5A0C43BBB2EF", 5, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "MAIZ TECNIFICADO", "2015A", "A", "105", "105", "630.0", "6.0" ]
+, [ 6, "7632C1F5-D520-482A-B9E5-776DF450DDA0", 6, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "MAIZ TRADICIONAL", "2015A", "A", "800", "800", "2400.0", "3.0" ]
+, [ 7, "F22086EE-747B-4C15-B3C2-84B260F01BE7", 7, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "MAIZ TRADICIONAL", "2015B", "B", "850", "850", "3060.0", "3.6" ]
+, [ 8, "73ED8AE6-EFA4-4D41-B943-16D6075D405D", 8, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "MARACUYA", "2015", "AÑO", "37", "37", "592.0", "16" ]
+, [ 9, "C749F647-306A-4B36-BE4E-820CA71100C4", 9, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "PALMA DE ACEITE", "2015", "AÑO", "7650", "4750", "85500.0", "18" ]
+, [ 10, "54624A1D-A205-47D6-9929-DE5932B2CDC7", 10, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "PAPAYA", "2015", "AÑO", "25", "18", "630.0", "35" ]
+, [ 11, "D072E73F-1BA2-4F92-8A07-11F9AB6493B9", 11, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "PATILLA", "2015A", "A", "60", "60", "2100.0", "35.0" ]
+, [ 12, "F7B2CE54-6112-4A1C-B667-9589FFCA8451", 12, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "PATILLA", "2015B", "B", "70", "70", "2450.0", "35.0" ]
+, [ 13, "161434AE-6E12-4E7B-983A-7F60C20A542F", 13, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "PIÑA", "2015", "AÑO", "80", "20", "920.0", "46" ]
+, [ 14, "69A27695-B7AB-47DD-8DE8-AA3D3421C9E0", 14, 1504238762, "983097", 1504238762, "983097", null, "META ", "PUERTO CONCORDIA", "PLATANO", "2015", "AÑO", "900", "680", "12920.0", "19" ]
+, [ 15, "738B8D5D-C31C-4038-936B-F836CCC0F011", 15, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO CONCORDIA", "YUCA", "2015", "AÑO", "450", "450", "8100.0", "18.0" ]
+, [ 16, "092E167A-1007-4CB0-AA04-FCA75BE607A7", 16, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "ARROZ SECANO MECANIZADO ", "2015A", "A", "527", "230", "1495.0", "6.5" ]
+, [ 17, "C3C7BEA2-CD43-44DE-B542-CB8688B267DB", 17, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "MAIZ TECNIFICADO", "2015A", "A", "45", "45", "270.0", "6" ]
+, [ 18, "19CDCC21-A202-430A-A9EA-4D59EBFB2294", 18, 1504238762, "983097", 1504238762, "983097", null, "META ", "PUERTO RICO", "MAIZ TRADICIONAL", "2015A", "A", "30", "30", "45.0", "1.5" ]
+, [ 19, "0C5C5BDB-6CB8-4C7B-B357-56F67F83113C", 19, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "PATILLA", "2015A", "A", "200", "200", "7000.0", "35" ]
+, [ 20, "7D76F23D-ADA4-4932-96D3-F20211D40EBD", 20, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "MAIZ TRADICIONAL", "2015B", "B", "10", "10", "16.0", "1.6" ]
+, [ 21, "6F063230-9253-468E-B40E-24CE8CD7AA65", 21, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "PATILLA", "2015B", "B", "115", "115", "4025.0", "35" ]
+, [ 22, "A0BB8FFA-2C97-4B81-96BE-390E8D7642B8", 22, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO ", "YUCA", "2015", "AÑO", "40", "40", "720.0", "18" ]
+, [ 23, "933025FD-447A-4346-92FF-0EEAB4E6E618", 23, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "CACAO", "2015", "AÑO", "515", "300", "270.0", "0.9" ]
+, [ 24, "B17EBE7D-9EE3-4065-B15F-309E5015D64B", 24, 1504238762, "983097", 1504238762, "983097", null, "META ", "PUERTO RICO", "CAÑA PANELERA", "2015", "AÑO", "149", "149", "372.5", "2.5" ]
+, [ 25, "53FBEB72-2EAE-40C5-B82B-A9306FFC9293", 25, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "CAUCHO", "2015", "AÑO", "132", "104", "228.8", "2.2" ]
+, [ 26, "B0A51B49-92B2-4A8A-8DA5-B24F926DE6BC", 26, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "GUANABANA", "2015", "AÑO", "1", "1", "7.0", "7" ]
+, [ 27, "D9DA91F1-E36E-43DB-B6DC-13F17E04AD8C", 27, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "GUAYABA", "2015", "AÑO", "5", "5", "40.0", "8" ]
+, [ 28, "0E07DA61-3F5C-451B-B14C-F56543BC401A", 28, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "MARACUYA", "2015", "AÑO", "6", "4", "72.0", "18" ]
+, [ 29, "E69CD3A2-FEEC-43B7-A3DA-408A75CCFAD1", 29, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "PALMA DE ACEITE", "2015", "AÑO", "10700", "4300", "103200.0", "24" ]
+, [ 30, "CAD5790D-5216-417A-A10F-B44E5132E448", 30, 1504238762, "983097", 1504238762, "983097", null, "META ", "PUERTO RICO", "PAPAYA", "2015", "AÑO", "12", "12", "420.0", "35" ]
+, [ 31, "C04AA1C3-3790-471B-BEC1-F1A38B7CFEAB", 31, 1504238762, "983097", 1504238762, "983097", null, "META ", "PUERTO RICO", "PIÑA", "2015", "AÑO", "350", "290", "13050.0", "45" ]
+, [ 32, "54C0D6DF-6248-48F3-AD76-2ADB09A4AE3F", 32, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO RICO", "PLATANO", "2015", "AÑO", "1250", "1200", "24000.0", "20" ]
+, [ 33, "50219C30-CB91-4A18-82E1-21EFE4E4BCF0", 33, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "ARROZ SECANO MECANIZADO ", "2015", "A", "29", "6", "36.0", "6" ]
+, [ 34, "8268000A-DF7B-424F-988C-CF97C20D2F72", 34, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "FRIJOL", "2015", "A", "70", "70", "105.0", "1.5" ]
+, [ 35, "07C88421-1EF2-43AC-9354-127E03DA54D0", 35, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "MAIZ TECNIFICADO", "2015", "A", "375", "375", "2250.0", "6" ]
+, [ 36, "4D4C72AA-CA70-46AC-B74C-0E18B3593B42", 36, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "MAIZ TRADICIONAL", "2015", "A", "40", "40", "100.0", "2.5" ]
+, [ 37, "D92FCAC9-89A4-4E1A-9566-5842AA32E715", 37, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "TOMATE", "2015", "A", "2", "2", "60.0", "30" ]
+, [ 38, "3C54FDC5-5CA5-4F8C-AF06-1274EA2ED76D", 38, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "FRIJOL", "2015", "B", "15", "15", "22.5", "1.5" ]
+, [ 39, "14A4E810-6BE7-442C-8EF8-CA603961CA26", 39, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "MAIZ TECNIFICADO", "2015", "B", "180", "180", "990.0", "5.5" ]
+, [ 40, "A5E2EC7E-4D23-4B0E-859A-CF05FA389F59", 40, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "MAIZ TRADICIONAL", "2015", "B", "40", "40", "80.0", "2" ]
+, [ 41, "990044AB-9FC3-459C-B471-7DCA63F12667", 41, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "SOYA", "2015", "B", "20", "20", "38.0", "1.9" ]
+, [ 42, "95D31440-B6B2-4AE0-A805-0035026650D1", 42, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "YUCA", "2015", "AÑO", "340", "340", "6120.0", "18" ]
+, [ 43, "99F5C22A-C4B0-4B4E-8314-6F0F31706AAA", 43, 1504238762, "983097", 1504238762, "983097", null, "META ", "LEJANIAS", "AGUACATE", "2015", "AÑO", "215", "170", "1870.0", "11" ]
+, [ 44, "65CBA656-8949-449E-9133-DDF2D2AEBD31", 44, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "CACAO", "2015", "AÑO", "307", "272", "244.8", "0.9" ]
+, [ 45, "7D9C842F-EE91-44CE-B3DC-951C6BC1CF18", 45, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "CAFÉ", "2015", "AÑO", "1075", "835", "1252.5", "1.5" ]
+, [ 46, "EB5B9A3E-EFC1-45D6-A72D-22C6BC6A2CC1", 46, 1504238762, "983097", 1504238762, "983097", null, "META ", "LEJANIAS", "CAÑA PANELERA", "2015", "AÑO", "280", "280", "700.0", "2.5" ]
+, [ 47, "0CEC5A2E-28C4-4EBB-924E-1E9F1BBF3340", 47, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "CAUCHO", "2015", "AÑO", "2", "2", "4.0", "2" ]
+, [ 48, "3421AB54-36E2-4D3D-B3DA-416C4EB542D9", 48, 1504238762, "983097", 1504238762, "983097", null, "META ", "LEJANIAS", "CITRICOS", "2015", "AÑO", "2580", "2300", "43700.0", "19" ]
+, [ 49, "DE15E9D8-588B-49C0-A24A-6C6C19BC22FE", 49, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "GUANABANA", "2015", "AÑO", "40", "40", "104.0", "2.6" ]
+, [ 50, "BDFAEF3A-91E2-478E-8C5F-EA9D15318037", 50, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "GUAYABA", "2015", "AÑO", "1670", "1450", "13050.0", "9" ]
+, [ 51, "C5A622DB-0AA8-4904-9B40-3823E144C38F", 51, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "LULO", "2015", "AÑO", "12", "12", "60.0", "5" ]
+, [ 52, "3A716E0D-3DC4-4664-8750-DF6F3B49186C", 52, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "MARACUYA", "2015", "AÑO", "260", "260", "5200.0", "20" ]
+, [ 53, "F2B6473E-20D7-4D52-B229-8D963B4387AC", 53, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "MORA", "2015", "AÑO", "17", "17", "153.0", "9" ]
+, [ 54, "0E7FC0A3-7EBF-4941-B1D2-04B33E4B3694", 54, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "PAPAYA", "2015", "AÑO", "5", "5", "200.0", "40" ]
+, [ 55, "5CDD5BCE-ADC8-42CC-ADFF-6AB17F30A788", 55, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "PLATANO", "2015", "AÑO", "1310", "1190", "20230.0", "17" ]
+, [ 56, "EC437F54-21BF-4ED7-A8AE-627B8D447233", 56, 1504238762, "983097", 1504238762, "983097", null, "META", "LEJANIAS", "PITAYA", "2015", "AÑO", "13", "13", "104.0", "8" ]
+, [ 57, "6BFAF3B8-FFEC-4BD8-9621-1A61B6808264", 57, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "MAIZ TRADICIONAL", "2015", "A", "750", "750", "1875.0", "2.5" ]
+, [ 58, "DDC601BC-B167-4294-A251-4C85091F8A31", 58, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "MAIZ MECANIZADO", "2015", "A", "10", "10", "60.0", "6" ]
+, [ 59, "0DAAF2D7-80E4-445C-8496-0195C4AE92B6", 59, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "FRIJOL", "2015", "A", "15", "15", "10.5", "0.7" ]
+, [ 60, "8CEEAECF-DB45-4296-A898-6E4F09D2705A", 60, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "MAIZ TRADICIONAL", "2015", "B", "400", "400", "800.0", "2" ]
+, [ 61, "F3FCCE70-CAA3-4E33-AF2E-0A09B8676710", 61, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "ARVEJA", "2015", "B", "30", "30", "195.0", "6.5" ]
+, [ 62, "723D25A6-66FA-4BB8-BE27-3FD8BB51BF1B", 62, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "YUCA", "2015", "AÑO", "160", "160", "2720.0", "17" ]
+, [ 63, "DBBE585F-255A-42CF-BB37-CB03EBF3BECB", 63, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "AGUACATE", "2015", "AÑO", "25", "3", "33.0", "11" ]
+, [ 64, "BF7AE646-5922-46D0-B3D0-F8A833290CF7", 64, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "CACAO", "2015", "AÑO", "253", "211", "189.9", "0.9" ]
+, [ 65, "7ACFD959-EDDE-410C-BB3E-8609EF43929C", 65, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "CAÑA PANELERA", "2015", "AÑO", "65", "65", "195.0", "3" ]
+, [ 66, "9A8C85AB-C04F-470A-9553-9A3251EC9626", 66, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "CAUCHO", "2015", "AÑO", "5", "5", "12.5", "2.5" ]
+, [ 67, "D486FAF5-3BED-43A0-A691-F65993574E05", 67, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "CITRICOS", "2015", "AÑO", "150", "135", "3510.0", "26" ]
+, [ 68, "1CD4534E-BA06-4D21-BA1E-0278F095350E", 68, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "PAPAYA", "2015", "AÑO", "110", "92", "3220.0", "35" ]
+, [ 69, "A9781BBA-AA46-4E9A-9224-38478BF8B2AC", 69, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "PLATANO", "2015", "AÑO", "600", "520", "9880.0", "19" ]
+, [ 70, "1A9D84A5-FD34-403D-989B-BE14A010D425", 70, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "CAFÉ", "2015", "AÑO", "120", "80", "120.0", "1.5" ]
+, [ 71, "2E0C9FF7-4CAA-4E6B-95A8-4CC98CF44D11", 71, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "PIÑA", "2015", "AÑO", "5", "1", "30.0", "30" ]
+, [ 72, "58709ECB-FA32-449A-B965-DF92AF384D78", 72, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "MORA", "2015", "AÑO", "1", null, "0.0", null ]
+, [ 73, "CD1D2FDB-F3BC-44FD-8E25-B00CB581B327", 73, 1504238762, "983097", 1504238762, "983097", null, "META", "URIBE", "MARACUYA", "2015", "AÑO", "3", "1", "15.0", "15" ]
+, [ 74, "A1668D4C-6165-429F-ACF2-01F965E3B0A5", 74, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "ARROZ SECANO MECANIZADO ", "2015", "A", "8400", "8400", "54600.0", "6.5" ]
+, [ 75, "F173E921-3222-43B1-A815-8FB691D95B21", 75, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "ARROZ RIEGO", "2015", "A", "120", "120", "684.0", "5.7" ]
+, [ 76, "4F718623-2053-44F2-9E65-B92B80798CC8", 76, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "ARROZ RIEGO", "2015", "B", "320", "320", "1824.0", "5.7" ]
+, [ 77, "DA3778A2-7701-4979-9D81-54AC24FE99FA", 77, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MAIZ TECNIFICADO", "2015", "A", "1670", "850", "5100.0", "6" ]
+, [ 78, "1BE3CE63-E389-48E4-B8EC-C66E3C5046A6", 78, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MAIZ TRADICIONAL", "2015", "A", "10", "10", "18.0", "1.8" ]
+, [ 79, "47CDCE97-9534-410D-BE20-FEB5E0813D1F", 79, 1504238762, "983097", 1504238762, "983097", null, "META ", "FUENTE DE ORO", "PATILLA", "2015", "A", "8", "8", "296.0", "37" ]
+, [ 80, "E38E0541-FFF0-4B26-8AC8-DE03B1B542A2", 80, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MAIZ TECNIFICADO", "2015", "B", "1465", "700", "4200.0", "6" ]
+, [ 81, "096336D5-C058-4AFB-B085-1750102EA5D5", 81, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MAIZ TRADICIONAL", "2015", "B", "20", "20", "36.0", "1.8" ]
+, [ 82, "84C72C85-0E03-4A01-908C-C78696377E28", 82, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "SOYA", "2015", "B", "230", "230", "598.0", "2.6" ]
+, [ 83, "630A17E5-7CA0-4A87-8030-816FF8A33CCF", 83, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "YUCA", "2015", "AÑO", "580", "1580", "28440.0", "18" ]
+, [ 84, "AB597638-F310-4F50-90E7-DE3C24C9328D", 84, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "AGUACATE", "2015", "AÑO", "20", "20", "130.0", "6.5" ]
+, [ 85, "9158EC0C-3BC9-4FCB-8352-23FEFE7B0AE6", 85, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "CACAO", "2015", "AÑO", "184", "144", "129.6", "0.9" ]
+, [ 86, "18187677-12A9-4B9B-925C-F7BE778C3CC8", 86, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "CAÑA PANELERA", "2015", "AÑO", "4", "4", "7.2", "1.8" ]
+, [ 87, "9778AAC9-1FFB-49CF-A487-3814158242E2", 87, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "CITRICOS", "2015", "AÑO", "22", "22", "330.0", "15" ]
+, [ 88, "8B9F1DC2-584A-4284-ABBA-40B0165EF369", 88, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "GUAYABA", "2015", "AÑO", "42", "42", "210.0", "5" ]
+, [ 89, "2703F4D4-A1A1-4198-9219-FE992A8C771E", 89, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MANGOSTINO", "2015", "AÑO", "3", "3", "4.8", "1.6" ]
+, [ 90, "EFB913D5-5C4E-42C7-B7EF-359D5B4BC817", 90, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MARACUYA", "2015", "AÑO", "31", "21", "273.0", "13" ]
+, [ 91, "C792428A-0B18-4401-A6E8-811B6989BCFA", 91, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "PALMA DE ACEITE", "2015", "AÑO", "3640", "3090", "83430.0", "27" ]
+, [ 92, "A057D7A2-86FC-4097-A7F9-993BD51EFFE8", 92, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "PAPAYA", "2015", "AÑO", "37", "25", "950.0", "38" ]
+, [ 93, "33CD9773-BD3A-455F-B34C-47BF255F1FF3", 93, 1504238762, "983097", 1504238762, "983097", null, "META ", "FUENTE DE ORO", "PIÑA", "2015", "AÑO", "350", "290", "13050.0", "45" ]
+, [ 94, "357EDB19-5349-44BE-B029-24100FA3B513", 94, 1504238762, "983097", 1504238762, "983097", null, "META ", "FUENTE DE ORO", "PLATANO", "2015", "AÑO", "5050", "4400", "88000.0", "20" ]
+, [ 95, "7AF0BC9A-E961-4169-85E6-CEDDAD8E6CE2", 95, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "MAIZ TECNIFICADO", "2015", "A", "150", "150", "900.0", "6" ]
+, [ 96, "E30A499B-A5E9-412B-912E-FB1172F9990C", 96, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "MAIZ TRADICIONAL", "2015", "A", "450", "450", "720.0", "1.6" ]
+, [ 97, "303C17EF-3BDA-4A82-A7A6-A1022CACAFE4", 97, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "MAIZ TECNIFICADO", "2015", "B", "150", "150", "900.0", "6" ]
+, [ 98, "5940E856-578B-4E6C-937D-52C9F5084738", 98, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "MAIZ TRADICIONAL", "2015", "B", "500", "500", "800.0", "1.6" ]
+, [ 99, "DBE7BE7C-6573-4335-95EC-8B6DD372A751", 99, 1504238762, "983097", 1504238762, "983097", null, "META ", "MESETAS", "AGUACATE", "2015", "AÑO", "145", "110", "1320.0", "12" ]
+, [ 100, "C1340AFF-04F5-403E-8B7A-4ED2EA9986FD", 100, 1504238762, "983097", 1504238762, "983097", null, "META ", "MESETAS", "CACAO", "2015", "AÑO", "202", "184", "165.6", "0.9" ]
+, [ 101, "46963C5F-8653-406B-8258-9F2342C575E4", 101, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "CAÑA PANELERA", "2015", "AÑO", "27", "27", "54.0", "2" ]
+, [ 102, "867860D6-7764-4D2C-A4E9-C9037789F900", 102, 1504238762, "983097", 1504238762, "983097", null, "META ", "MESETAS", "CAUCHO", "2015", "AÑO", "182", "82", "147.6", "1.8" ]
+, [ 103, "774C34A4-A0C4-4300-BC1D-A5220AA90206", 103, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "CITRICOS", "2015", "AÑO", "47", "42", "840.0", "20" ]
+, [ 104, "4809CC5F-0B82-45D4-BF6C-04E67E7F3AA9", 104, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "MARACUYA", "2015", "AÑO", "47", "44", "792.0", "18" ]
+, [ 105, "F3A1219D-E1DC-4648-AA00-CA4C23E3F4D1", 105, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "PIÑA", "2015", "AÑO", "60", "45", "1575.0", "35" ]
+, [ 106, "4387F6EE-84BF-4331-9D09-68EC9D5BF8F0", 106, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "PLATANO", "2015", "AÑO", "600", "600", "10200.0", "17" ]
+, [ 107, "FD1AB31D-6C50-46A3-BDBF-905C833A2EE0", 107, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "CAFÉ", "2015", "AÑO", "1630", "1210", "1815.0", "1.5" ]
+, [ 108, "3DE6160B-C166-4380-98CD-6A076D1CD3C6", 108, 1504238762, "983097", 1504238762, "983097", null, "META", "MESETAS", "YUCA", "2015", "AÑO", "100", "100", "1800.0", "18" ]
+, [ 109, "3BE47BD2-9CBD-498F-882C-A7E8B2E329C4", 109, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "AGUACATE", "2015", "AÑO", "4", "4", "32.0", "8" ]
+, [ 110, "579607AE-AEC8-46B0-98E4-A150DB9C150F", 110, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "CAFÉ", "2015", "AÑO", "38", "33", "49.5", "1.5" ]
+, [ 111, "EEFC821B-9E0B-4EB2-92C7-B529E6DBD12D", 111, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "CITRICOS", "2015", "AÑO", "100", "92", "1104.0", "12" ]
+, [ 112, "FC404F41-5130-43AD-8DC8-81AB9E39D053", 112, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "PALMA DE ACEITE", "2015", "AÑO", "10250", "9100", "273000.0", "30" ]
+, [ 113, "CF9F201B-96D7-4325-A8DD-6C4FBD43508E", 113, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "PIÑA", "2015", "AÑO", "22", "22", "880.0", "40" ]
+, [ 114, "39376F41-F86C-4A39-8C05-96E5ED2CC6BF", 114, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "CACAO", "2015", "AÑO", "56", "46", "41.4", "0.9" ]
+, [ 115, "0048D7D5-1BFD-4AC6-A2C4-36390129BB57", 115, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "GUAYABA PERA", "2015", "AÑO", "13", "10", "90.0", "9" ]
+, [ 116, "03CE3181-A200-48BE-AD72-101B3B92224B", 116, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "PLATANO", "2015", "AÑO", "20", "20", "320.0", "16" ]
+, [ 117, "E0E176ED-BF1A-4AC6-8C89-AB3711762ED0", 117, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "PAPAYA", "2015", "AÑO", "14", "14", "490.0", "35" ]
+, [ 118, "5B8E70DE-631D-41DB-A01B-B1A4EE0D551F", 118, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "CAÑA PANELERA", "2015", "AÑO", "24", "20", "40.0", "2" ]
+, [ 119, "7CAC9924-ECB9-42AF-B70E-1D73190AD1D1", 119, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "YUCA", "2015", "AÑO", "17", "17", "187.0", "11" ]
+, [ 120, "E3EED209-7956-4E83-B878-E6C505594416", 120, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "ARROZ RIEGO", "2015A", "A", "500", "1300", "8450.0", "6.5" ]
+, [ 121, "11C63E2F-EE72-4BE3-811A-8BCC59854888", 121, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "ARROZ SECANO MECANIZADO", "2015A", "A", "1100", "1100", "5500.0", "5" ]
+, [ 122, "E56977DB-91AF-4E89-9214-EF22DA0C9A88", 122, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "MAIZ TECNIFICADO", "2015A", "A", "350", "350", "1925.0", "5.5" ]
+, [ 123, "99E52C3A-CEF8-4177-B37E-906F65039B1B", 123, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "MAIZ TRADICIONAL", "2015A", "A", "8", "8", "16.0", "2" ]
+, [ 124, "496E5A5F-D650-464C-8F44-3A9396855A07", 124, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "ARROZ RIEGO", "2015B", "B", "218", "218", "1417.0", "6.5" ]
+, [ 125, "DFA1629C-811A-4077-A7BF-B3C9656FEA60", 125, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "MAIZ TECNIFICADO", "2015B", "B", "800", "800", "4400.0", "5.5" ]
+, [ 126, "B9A9C049-080F-473C-ADD1-69E6D21C510A", 126, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "MAIZ TRADICIONAL", "2015B", "B", "75", "75", "150.0", "2" ]
+, [ 127, "F299AC77-4A6E-4BAC-B7D4-C4DC1C15EC3E", 127, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "AHUYAMA ", "2015", "A", "4", "4", "60.0", "15" ]
+, [ 128, "0879BB54-6461-4DE6-BC2B-AD1FF546BAC6", 128, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "MARACUYA", "2015", "AÑO", "2", "2", "30.0", "15" ]
+, [ 129, "8A8DB0D3-A825-44F5-8D84-2FEE6F6B3D91", 129, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "MANGOSTINO", "2015", "AÑO", "10", "5", "25.0", "5" ]
+, [ 130, "1855B5D0-94E7-45A4-BB95-1BEB6FFFA3BB", 130, 1504238762, "983097", 1504238762, "983097", null, "META", "CUMARAL ", "RAMBUTAN", "2015", "AÑO", "6", "0", "0.0", "0" ]
+, [ 131, "DEC3ED9D-29E9-4D3D-9F03-3A57DD9E15B0", 131, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "LULO", "2015", "AÑO", "97", "94", "1410.0", "15" ]
+, [ 132, "091673D2-657F-4555-A915-62DA4DF1C490", 132, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "MORA", "2015", "AÑO", "94", "90", "900.0", "10" ]
+, [ 133, "FB98CE67-C57C-4383-8BC1-026F4152F2B3", 133, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "BANANO", "2015", "AÑO", "5.5", "3", "27.0", "9" ]
+, [ 134, "3718D474-5536-4357-9E35-27B4C4993499", 134, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "CAÑA PANELERA", "2015", "AÑO", "64", "60", "480.0", "8" ]
+, [ 135, "1B2AB319-4083-45EF-AC3A-87F83AC9C708", 135, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "PLATANO", "2015", "AÑO", "5", "3", "27.0", "9" ]
+, [ 136, "01CD91F2-9E02-4569-90AC-909039C41D27", 136, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "TOMATE DE ARBOL", "2015", "AÑO", "10", "8", "87.2", "10.9" ]
+, [ 137, "FCBCFFE0-FBDB-45CD-8BD3-8AC5DBF73D54", 137, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "TOMATE DE INVERNADERO", "2015", "AÑO", "4", "4", "80.0", "20" ]
+, [ 138, "6965BE03-B258-4DEF-9B68-F1984E9F6528", 138, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "SAGU ", "2015", "AÑO", "40", "40", "120.0", "3" ]
+, [ 139, "BA57D577-BF39-4122-9F6B-3B913D0548B8", 139, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "PAPA ", "2015", "A", "1", "1", "20.0", "20" ]
+, [ 140, "6D1131AD-9938-4F1E-9FBE-0E3F37F9C173", 140, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "PAPA CRIOLLA ", "2015", "A", "1", "1", "8.0", "8" ]
+, [ 141, "8FFE0389-2EE1-4E2B-875D-BDE06FB96B1B", 141, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "YUCA", "2015", "AÑO", "5", "5", "40.0", "8" ]
+, [ 142, "87A3DD2B-11F8-4F01-BAEC-B51DC133A92B", 142, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "FRIJOL VOLUBLE", "2015", "A", "350", "350", "945.0", "2.7" ]
+, [ 143, "C09AE2BB-B93D-4E5D-8EAC-EBD7F9046610", 143, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "CEBOLLA DE RAMA ", "2015", "A", "3", "3", "45.0", "15" ]
+, [ 144, "9733D647-551E-4899-BBCD-CE9A4EFE1A34", 144, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "PEPINO GUISO ", "2015", "A", "3", "3", "3.0", "1" ]
+, [ 145, "6D6DD4F4-760E-446F-932E-67F951E0E103", 145, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "CILANTRO", "2015", "A", "4", "4", "32.0", "8" ]
+, [ 146, "D7258C33-B777-404D-A8F8-91462591458A", 146, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "MAIZ TRADICIONAL", "2015A", "A", "46", "46", "92.0", "2" ]
+, [ 147, "DED080CE-552F-46CF-A0C5-612279FAB140", 147, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "AHUYAMA ", "2015A", "A", "3", "3", "39.0", "13" ]
+, [ 148, "CB4F6943-C162-4A22-9331-B8EF1184CD4D", 148, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "CEBOLLA DE BULBO ", "2015A", "A", "4", "4", "64.0", "16" ]
+, [ 149, "41C1BB19-D972-42B1-804D-95E22AD34FF0", 149, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "ARVEJA ", "2015A", "A", "3", "3", "13.5", "4.5" ]
+, [ 150, "E2B6378A-9AAC-498C-B3A7-6416429932F1", 150, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CALVARIO", "PEPINO GUISO ", "2015B", "B", "2", "2", "2.0", "1" ]
+, [ 151, "EE098C0C-1D6F-4D83-A2B9-20C77EEB711C", 151, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "PALMA DE ACEITE", "2015", "AÑO", "581", "535", "17120.0", "32" ]
+, [ 152, "D237C673-CD5B-4EF7-BAC2-D5F42CFA6D77", 152, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "CITRICOS", "2015", "AÑO", "108", "105", "2100.0", "20" ]
+, [ 153, "CD15ED71-AAEA-4DF4-821C-74FE9A40DB1F", 153, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "CACAO", "2015", "AÑO", "31", "20", "16.0", "0.8" ]
+, [ 154, "38E3326A-8FC0-4017-8148-FA1970C99352", 154, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "CAFÉ", "2015", "AÑO", "30", "20", "30.0", "1.5" ]
+, [ 155, "79CD3422-36E2-4933-8D0C-389293B62902", 155, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "PLATANO", "2015", "AÑO", "48", "40", "640.0", "16" ]
+, [ 156, "9A3DC5B7-B11D-44D1-A54E-5D05920363D1", 156, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "CAÑA PANELERA", "2015", "AÑO", "18", "18", "45.0", "2.5" ]
+, [ 157, "446481D8-174E-400F-8577-457CE5494EF9", 157, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "BANANO", "2015", "AÑO", "3", "5", "68.0", "13.6" ]
+, [ 158, "02DF6EBA-0DCC-41C7-AF30-11EE19B9E401", 158, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "PIÑA", "2015", "AÑO", "18", "18", "720.0", "40" ]
+, [ 159, "25497DB3-4363-4391-B241-23FC61F42C46", 159, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "SAGU ", "2015", "AÑO", "7", "7", "21.0", "3" ]
+, [ 160, "A3DEA62B-8404-4BBA-B394-17521B97296B", 160, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "YUCA", "2015", "AÑO", "49", "49", "1225.0", "25" ]
+, [ 161, "317E6965-E11A-4CF7-A032-3CF76847449F", 161, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "ARROZ RIEGO", "2015A", "A", "250", "250", "1425.0", "5.7" ]
+, [ 162, "0CEB19F9-C0EB-4769-85A1-9ADF643D0C20", 162, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "ARROZ SECANO MECANIZADO", "2015A", "A", "1508", "1508", "8595.6", "5.7" ]
+, [ 163, "99F25FBA-9E75-4573-ACC5-BA6558839714", 163, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "MAIZ TRADICIONAL", "2015A", "A", "6", "6", "9.6", "1.6" ]
+, [ 164, "711CDF37-52D0-444F-BD98-493637370FAC", 164, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "ARROZ RIEGO", "2015B", "B", "125", "125", "712.5", "5.7" ]
+, [ 165, "48B4FA23-FDAD-4E6E-9938-F5038260D8CA", 165, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "MAIZ TRADICIONAL", "2015B", "B", "5", "5", "8.0", "1.6" ]
+, [ 166, "6FDFA86B-3D58-46D1-944E-7AA56E0CEEBA", 166, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "MANGOSTINO", "2015", "AÑO", "30", "15", "75.0", "5" ]
+, [ 167, "6365742D-14E4-4298-8FAA-159E76F6118B", 167, 1504238762, "983097", 1504238762, "983097", null, "META", "RESTREPO", "RAMBUTAN", "2015", "AÑO", "20", "0", "0.0", "0" ]
+, [ 168, "EBD1F34A-BB30-433B-82CD-80BDDA2C504A", 168, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "AGUACATE ", "2015", "AÑO", "2", "2", "26.0", "13" ]
+, [ 169, "463A9FA3-5D94-4351-A514-6E3844E75794", 169, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "LULO", "2015", "AÑO", "15", "15", "135.0", "9" ]
+, [ 170, "7E95D80B-704B-4C3D-B63B-2BEDAB62D1E4", 170, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "MORA", "2015", "AÑO", "2", "2", "20.0", "10" ]
+, [ 171, "FC770522-AB5A-4649-9BE7-4AD9BA6BE914", 171, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "CAÑA PANELERA", "2015", "AÑO", "49", "40", "120.0", "3" ]
+, [ 172, "0708932B-2EB4-4754-99E0-25093C17CA85", 172, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "PLATANO", "2015", "AÑO", "8", "3", "27.0", "9" ]
+, [ 173, "6D30C5A2-2F49-4184-ADDB-931099221C56", 173, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "CAFÉ", "2015", "AÑO", "36", "30", "24.0", "0.8" ]
+, [ 174, "C5133D91-A416-4584-B921-F87CF0EC6723", 174, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "TOMATE DE ARBOL", "2015", "AÑO", "25", "25", "272.5", "10.9" ]
+, [ 175, "4B29C72F-3136-4DBF-A48F-F61BD0A5884F", 175, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "SAGU ", "2015", "AÑO", "40", "30", "510.0", "17" ]
+, [ 176, "778008A6-9D8F-48C5-AE7A-3093DD379B9F", 176, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "TOMATE DE INVERNADERO", "2015", "AÑO", "1", "1", "20.0", "20" ]
+, [ 177, "E5564397-5826-47B1-8FE0-99D53B6C87AD", 177, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "MAIZ TRADICIONAL", "2015A", "A", "400", "400", "720.0", "1.8" ]
+, [ 178, "298B5A76-38B6-4272-A868-FD0A495290A2", 178, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "ARVEJA ", "2015A", "A", "5", "5", "60.0", "12" ]
+, [ 179, "CCCC913C-0ABF-4D24-9C2B-C128B1ACE37C", 179, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUANITO ", "FRIJOL  ", "2015A", "A", "1000", "1000", "1800.0", "1.8" ]
+, [ 180, "8A6D9C61-0410-4733-8D55-DD5F73A1957E", 180, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "CAUCHO", "2015", "AÑO", "203", "180", "396.0", "2.2" ]
+, [ 181, "3C85E849-7C5D-4FAF-AEDC-7DA623AE8342", 181, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "AGUACATE ", "2015", "AÑO", "55", "45", "585.0", "13" ]
+, [ 182, "9BB85FC5-C832-4FB5-887B-B76133EC3C81", 182, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "CITRICOS", "2015", "AÑO", "1490", "1485", "32670.0", "22" ]
+, [ 183, "A0BBF82E-3A4E-447C-BBF8-70A6E84BA61B", 183, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "GUANABANA", "2015", "AÑO", "110", "100", "600.0", "6" ]
+, [ 184, "7C4805E1-ECCA-4D4C-9028-D4112CE3B523", 184, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "GUAYABA PERA", "2015", "AÑO", "103", "103", "927.0", "9" ]
+, [ 185, "9A7DDE5B-AF03-4EAB-BF00-E1BAAD4D40E4", 185, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "PALMA DE ACEITE", "2015", "AÑO", "650", "630", "1890.0", "3" ]
+, [ 186, "9D6F0569-F459-4660-A3C3-BEEE6784F075", 186, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "CACAO", "2015", "AÑO", "144", "90", "108.0", "1.2" ]
+, [ 187, "EA0571A9-C7F0-49FE-A201-401E825E46BE", 187, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "CAFÉ", "2015", "AÑO", "146", "134", "201.0", "1.5" ]
+, [ 188, "14803F02-A194-4502-A923-28FFEA5EB86C", 188, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "CAÑA PANELERA", "2015", "AÑO", "7", "7", "17.5", "2.5" ]
+, [ 189, "E945B7D8-9E0C-435E-ACDC-778343C87883", 189, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "YUCA", "2015", "AÑO", "160", "160", "1600.0", "10" ]
+, [ 190, "459D45CD-5377-43DA-A63D-8DF0287A898A", 190, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "ARROZ RIEGO", "2015", "A", "895", "895", "5012.0", "5.6" ]
+, [ 191, "FE830F68-3A34-4736-A2DD-24D8F9D7FAF6", 191, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "ARROZ SECANO MECANIZADO", "2015A", "A", "1200", "9804", "54902.4", "5.6" ]
+, [ 192, "7640A4AD-1CD4-44EF-BD84-E15C3AF775C3", 192, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "MAIZ TECNIFICADO", "2015A", "A", "1903", "1903", "13321.0", "7" ]
+, [ 193, "6E7C77F7-86EB-4603-9A04-157179462927", 193, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "MAIZ TRADICIONAL", "2015A", "A", "92", "92", "230.0", "2.5" ]
+, [ 194, "3A7404DF-9E38-417B-97E4-504A1EB9D317", 194, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "PATILLA", "2015A", "A", "33", "33", "693.0", "21" ]
+, [ 195, "F78B1E4A-C768-4E61-86BD-300995A62233", 195, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "ARROZ RIEGO", "2015B", "B", "327", "248", "1388.8", "5.6" ]
+, [ 196, "3A4BBFC5-294B-476F-80E7-61FF28C07319", 196, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "MAIZ TECNIFICADO", "2015B", "B", "1720", "1720", "10320.0", "6" ]
+, [ 197, "F0E97A10-DC73-437C-A0AD-F582FC70E1A8", 197, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "PATILLA", "2015B", "B", "15", "15", "300.0", "20" ]
+, [ 198, "35CD19B3-EF70-4C71-908D-D49869ABF86C", 198, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "ARAZA", "2015", "AÑO", "0.5", "0.5", "6.0", "12" ]
+, [ 199, "07A7DD7B-3BB8-4D8A-BA53-BE34231208CA", 199, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "MARACUYA", "2015", "AÑO", "10", "10", "150.0", "15" ]
+, [ 200, "6174FD37-1334-48D6-AB2C-147E457AECCF", 200, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "PAPAYA", "2015", "AÑO", "50", "50", "2000.0", "40" ]
+, [ 201, "9A7342F6-DD66-4C03-AFB0-4C83CCD9D656", 201, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "PIÑA", "2015", "AÑO", "737", "737", "29480.0", "40" ]
+, [ 202, "F21B89ED-5171-4177-A1B7-9013510AA4C8", 202, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "PLATANO", "2015", "AÑO", "138", "138", "2346.0", "17" ]
+, [ 203, "5AC16FB6-23E0-4BD1-8886-BB39BA6143AE", 203, 1504238762, "983097", 1504238762, "983097", null, "META", "VILLAVICENCIO", "SOYA", "2015", "B", "1500", "1500", "3300.0", "2.2" ]
+, [ 204, "DB7EDF18-00F5-49AF-9A23-517DAFFB8F75", 204, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "CAUCHO", "2015", "AÑO", "25", "20", "60.0", "3" ]
+, [ 205, "F3014752-7BE1-4885-9CA7-DF9135AA3BF2", 205, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "CITRICOS", "2015", "AÑO", "260", "250", "6250.0", "25" ]
+, [ 206, "CBB49145-8D6C-4620-9761-CE807837510E", 206, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "PALMA DE ACEITE", "2015", "AÑO", "13584", "10000", "330000.0", "33" ]
+, [ 207, "0E126881-3236-487D-ABE4-7C6C3499EBF6", 207, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "CACAO", "2015", "AÑO", "43", "34", "68.0", "2" ]
+, [ 208, "10438D63-8172-4B63-A306-409B5B6CAFD7", 208, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "PAPAYA", "2015", "AÑO", "8", "8", "224.0", "28" ]
+, [ 209, "2199D18A-F6C2-4802-9A71-4517F8AD24B3", 209, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "PIÑA", "2015", "AÑO", "25", "17", "680.0", "40" ]
+, [ 210, "90B4653B-7D96-4FD6-A2D6-519F2E7A912A", 210, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "CAÑA PANELERA", "2015", "AÑO", "10", "10", "25.0", "2.5" ]
+, [ 211, "C67E8F9C-6C30-4772-AC34-E1FEE443D6D5", 211, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "PLATANO", "2015", "AÑO", "175", "150", "1800.0", "12" ]
+, [ 212, "2F84FEC1-8534-48A1-A0D8-95620EB62FBB", 212, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "YUCA", "2015", "AÑO", "150", "150", "2850.0", "19" ]
+, [ 213, "2D963963-B6AC-4394-8B4F-DE157D41C5CF", 213, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "ARROZ SECANO MECANIZADO", "2015A", "A", "82", "82", "442.8", "5.4" ]
+, [ 214, "80F88320-1D9D-4D83-AE37-FB28640AAE35", 214, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "MAIZ TRADICIONAL", "2015A", "A", "190", "190", "380.0", "2" ]
+, [ 215, "8E4A46BC-E34D-4FF4-B2FE-1A3C95E24231", 215, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "PATILLA", "2015A", "A", "20", "20", "560.0", "28" ]
+, [ 216, "B0C92CAE-F024-4B3E-BC5B-0B27B9398EA6", 216, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "MAIZ TRADICIONAL", "2015B", "B", "185", "185", "370.0", "2" ]
+, [ 217, "2F088614-2D02-4023-A65E-3FDFF282145E", 217, 1504238762, "983097", 1504238762, "983097", null, "META", "BARRANCA DE UPIA ", "PATILLA", "2015B", "B", "28", "28", "784.0", "28" ]
+, [ 218, "F0179D6D-A09C-4904-8C45-A7006EEDEFD1", 218, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "AHUYAMA ", "2015", "A", "3", "3", "90.0", "30" ]
+, [ 219, "DA32E9C7-A1E7-424D-B274-C79B998D6792", 219, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "ARROZ RIEGO", "2015", "A", "300", "300", "1950.0", "6.5" ]
+, [ 220, "2448D9C2-9F68-4B62-9496-35D7DCF214BC", 220, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "ARROZ RIEGO", "2015", "B", "1200", "1200", "7800.0", "6.5" ]
+, [ 221, "B45BFB63-2010-4070-956A-6356F8FC86E1", 221, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "ARROZ SECANO MECANIZADO", "2015", "A", "300", "300", "1800.0", "6" ]
+, [ 222, "5321C55D-74D4-44AD-B134-032699CF3535", 222, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "CACAO ", "2015", "AÑO", "118", "60", "72.0", "1.2" ]
+, [ 223, "81B2C766-5D70-432B-BC7C-767E9509D27B", 223, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "CITRICOS ", "2015", "AÑO", "80", "80", "1600.0", "20" ]
+, [ 224, "2289E072-BFBB-47D4-B213-8181F038FAC8", 224, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "MAIZ FORRAJERO", "2015", "A", "100", "100", "2000.0", "20" ]
+, [ 225, "4CF6BAA3-1FF8-4B94-B923-90DC971CB47D", 225, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "MAIZ FORRAJERO", "2015", "B", "100", "100", "2000.0", "20" ]
+, [ 226, "2717753B-4000-4045-89C1-C481019607AA", 226, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "PALMA", "2015", "AÑO", "12700", "10000", "400000.0", "40" ]
+, [ 227, "A872D430-5881-4DF4-A144-41C034150DFC", 227, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "PAPAYA ", "2015", "AÑO", "55", "55", "1815.0", "33" ]
+, [ 228, "97AF8D2A-B46C-4396-8628-CAF25B2E2F93", 228, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "PATILLA", "2015", "A", "15", "15", "600.0", "40" ]
+, [ 229, "38306725-060B-4972-8F37-11DD720F882C", 229, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "PLATANO", "2015", "AÑO", "65", "65", "975.0", "15" ]
+, [ 230, "4AE18CA7-402E-4355-929A-9B9CF0A0C4A1", 230, 1504238762, "983097", 1504238762, "983097", null, "META", "CASTILLA LA NUEVA ", "YUCA", "2015", "AÑO", "20", "20", "560.0", "28" ]
+, [ 231, "A6CFEE22-2A9B-4E81-A41D-4E3B6B518287", 231, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL DORADO", "AGUACATE", "2015", "AÑO", "135", "90", "540.0", "6" ]
+, [ 232, "FB01C23F-DE31-45CB-8B02-43AC04A80D72", 232, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "ARAZA", "2015", "AÑO", "2", "2", "4.0", "2" ]
+, [ 233, "77C7F6CE-E751-4672-8907-CC4A43EF91BA", 233, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "CACAO ", "2015", "AÑO", "525", "300", "300.0", "1" ]
+, [ 234, "027FC0EE-546D-42B2-A725-C4E354CEFABD", 234, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "CAFÉ", "2015", "AÑO", "249", "220", "330.0", "1.5" ]
+, [ 235, "5240A840-37A5-4EE9-9031-0CE39DE8B83E", 235, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL DORADO", "CAÑA PANELERA", "2015", "AÑO", "1", "1", "2.5", "2.5" ]
+, [ 236, "040E1DFD-3C74-4461-B447-E2892CDA42DD", 236, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "CITRICOS ", "2015", "AÑO", "59", "59", "1298.0", "22" ]
+, [ 237, "58396C51-1B0D-43FC-98F2-8E91AE61C901", 237, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "FRIJOL", "2015", "A", "0", "0", "0.0", "0" ]
+, [ 238, "35A4ED68-152F-4AD0-BA56-36163C26B010", 238, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "FRIJOL", "2015", "B", "1", "1", "1.0", "1" ]
+, [ 239, "1470ADFE-F54D-46F7-B0A1-29513C78999A", 239, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "GUANABANA", "2015", "AÑO", "3", "3", "7.5", "2.5" ]
+, [ 240, "3C858A28-5B52-428C-AD74-1B182B5229EE", 240, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "GUAYABA", "2015", "AÑO", "4", "4", "26.0", "6.5" ]
+, [ 241, "E02EE9F7-3D81-46E2-9AED-4AE41DA5587C", 241, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL DORADO", "MAIZ TRADICIONAL ", "2015", "A", "30", "30", "60.0", "2" ]
+, [ 242, "CDF190C2-799A-44AC-81D5-97A903F5AF51", 242, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "MAIZ TRADICIONAL ", "2015", "B", "30", "30", "60.0", "2" ]
+, [ 243, "E3B5BA90-015F-4C10-AE28-810013A34E53", 243, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "MARACUYA", "2015", "AÑO", "10", "10", "180.0", "18" ]
+, [ 244, "12C91260-31F8-49EB-9807-E32A479216E6", 244, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "PLATANO", "2015", "AÑO", "97", "97", "1552.0", "16" ]
+, [ 245, "06577A6F-80CF-4467-8365-11440BA20A4A", 245, 1504238762, "983097", 1504238762, "983097", null, "META", "EL DORADO", "YUCA", "2015", "AÑO", "30", "30", "450.0", "15" ]
+, [ 246, "65E910AA-1042-435C-AFF9-12DB969C97D3", 246, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "AHUYAMA ", "2015", "A", "5", "5", "90.0", "18" ]
+, [ 247, "F95074C0-A990-40E6-AA2D-254B15480436", 247, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL CASTILLO", "AGUACATE", "2015", "AÑO", "23", "10", "60.0", "6" ]
+, [ 248, "A0A3DAC4-3199-4A71-99A1-8B201BFA3800", 248, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL CASTILLO", "AHUYAMA ", "2015", "B", "5", "5", "90.0", "18" ]
+, [ 249, "0022B6A2-99FB-49A4-A9A9-F87579B1F7F0", 249, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL CASTILLO", "AHUYAMA ", "2015", "A", "6", "6", "108.0", "18" ]
+, [ 250, "192D7F66-6184-4F75-9CA4-846AD5FB9D57", 250, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "ARROZ SECANO MECANIZADO", "2015", "A", "420", "420", "2394.0", "5.7" ]
+, [ 251, "F67090B4-84E1-4E26-B23D-11ADC13812DD", 251, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "ARROZ SECANO MECANIZADO", "2015", "B", "1", "1", "5.7", "5.7" ]
+, [ 252, "BEB8B671-2A86-4D53-AD1F-98416997AD70", 252, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "CACAO ", "2015", "AÑO", "485", "485", "485.0", "1" ]
+, [ 253, "15716660-B324-4302-8544-FA448910C900", 253, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "CAFÉ", "2015", "AÑO", "230", "210", "315.0", "1.5" ]
+, [ 254, "226A9011-CB59-4F62-AE4E-807AF419C56B", 254, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "CAÑA PANELERA", "2015", "AÑO", "20", "20", "50.0", "2.5" ]
+, [ 255, "890C65D5-80C4-45EB-92AA-C24F2D144EEC", 255, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "CAUCHO", "2015", "AÑO", "51", "15", "18.0", "1.2" ]
+, [ 256, "2B576478-E1E4-43AB-B5F8-A2443C5FE807", 256, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "CITRICOS ", "2015", "AÑO", "100", "80", "1200.0", "15" ]
+, [ 257, "16AC6F31-BF3B-4F24-9987-564A8498DC56", 257, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "GUAYABA", "2015", "AÑO", "9", "0", "0.0", "0" ]
+, [ 258, "F20C86CC-3C29-49B5-B2B5-EB1F647F1E75", 258, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "MAIZ TECNIFICADO", "2015", "A", "150", "150", "750.0", "5" ]
+, [ 259, "608D3726-373F-4F75-9DA2-46D63C3CD569", 259, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "MAIZ TECNIFICADO", "2015", "B", "110", "110", "528.0", "4.8" ]
+, [ 260, "59C04499-BF1D-4BBA-B09B-26939BFAB414", 260, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "MAIZ TRADICIONAL ", "2015", "A", "50", "50", "90.0", "1.8" ]
+, [ 261, "5DCB0946-9158-4E71-AA2B-95F9A05F0341", 261, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL CASTILLO", "MAIZ TRADICIONAL ", "2015", "B", "40", "40", "72.0", "1.8" ]
+, [ 262, "ACC06438-EE7E-4864-8D4B-439BCC047385", 262, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "MARACUYA", "2015", "AÑO", "60", "57", "1140.0", "20" ]
+, [ 263, "316EE56F-D1E9-4B79-A577-8B68CECEC6CD", 263, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "PAPAYA ", "2015", "AÑO", "18", "18", "540.0", "30" ]
+, [ 264, "8FF65C0D-E6DC-4029-8F9D-965F05DC3C4C", 264, 1504238762, "983097", 1504238762, "983097", null, "META ", "EL CASTILLO", "PLATANO", "2015", "AÑO", "680", "680", "10200.0", "15" ]
+, [ 265, "28F0ADE3-BA4C-4AF8-B995-780446BFE3A6", 265, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "YUCA", "2015", "AÑO", "380", "370", "5550.0", "15" ]
+, [ 266, "6C5044D9-C08B-49EA-997E-AC16ED243A41", 266, 1504238762, "983097", 1504238762, "983097", null, "META ", "GUAMAL", "AGUACATE", "2015", "AÑO", "14", "9", "72.0", "8" ]
+, [ 267, "410563B3-1E99-462F-995A-B939C8ED356D", 267, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "BANANO", "2015", "AÑO", "27", "27", "162.0", "6" ]
+, [ 268, "54659496-CCEC-42D3-92BC-AB6C92EBAFFD", 268, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "CACAO ", "2015", "AÑO", "370", "370", "370.0", "1" ]
+, [ 269, "92A38248-390E-454B-88C1-7854FF6C4D56", 269, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "CAÑA PANELERA", "2015", "AÑO", "15", "15", "37.5", "2.5" ]
+, [ 270, "0A9ED4F1-D1CF-45B1-A12A-5C568575E06E", 270, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "CITRICOS ", "2015", "AÑO", "328", "318", "4770.0", "15" ]
+, [ 271, "774C7E0E-19E0-4A00-9402-50B7FEB6AB8A", 271, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "GUAYABA", "2015", "AÑO", "22", "20", "180.0", "9" ]
+, [ 272, "84C4E458-3FDA-4AEA-A122-50961ADE5B97", 272, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "HABICHUELA", "2015", "A", "4", "4", "14.0", "3.5" ]
+, [ 273, "58E08E75-4AFE-42F6-853B-F6E49434EF07", 273, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "HABICHUELA", "2015", "B", "4", "4", "16.0", "4" ]
+, [ 274, "D05881BC-AE0C-4A9E-A230-A8AE9B5BD3AE", 274, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "MAIZ FORRAJERO", "2015", "A", "136", "136", "3400.0", "25" ]
+, [ 275, "8C6675A0-B84C-4780-839B-376F17591E43", 275, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "MAIZ FORRAJERO", "2015", "B", "100", "100", "2400.0", "24" ]
+, [ 276, "8889B0CE-F614-4DD4-877C-992DD27BF4DC", 276, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "MAIZ TRADICIONAL ", "2015", "A", "2", "2", "3.0", "1.5" ]
+, [ 277, "A8CF47CE-7A0C-4683-93F4-5FD6C308FE62", 277, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "MAIZ TRADICIONAL ", "2015", "B", "50", "50", "75.0", "1.5" ]
+, [ 278, "CE71CBE9-009D-4C7F-949C-96FE4C682C7A", 278, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "MANGOSTINO", "2015", "AÑO", "10", "10", "80.0", "8" ]
+, [ 279, "BA695CCB-1BE2-4855-81D5-0BBD0407C19B", 279, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "MARACUYA", "2015", "AÑO", "12", "12", "216.0", "18" ]
+, [ 280, "DC757C55-7FF1-47CC-81C5-D190E44755E5", 280, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "PALMA DE ACEITE", "2015", "AÑO", "1852", "800", "14400.0", "18" ]
+, [ 281, "C604BC9A-213D-4B0B-83D8-25105D5F0339", 281, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "PAPAYA ", "2015", "AÑO", "14", "10", "400.0", "40" ]
+, [ 282, "8F4CA584-7B64-43D4-997E-0B5BCEDE716C", 282, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "PEPINO COHOMBRE", "2015", "A", "3", "3", "24.0", "8" ]
+, [ 283, "DCB0C63E-8D60-49C4-B1B1-8490C2C684BF", 283, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "PEPINO COHOMBRE", "2015", "B", "3", "3", "24.0", "8" ]
+, [ 284, "09F8F461-670E-4249-A3C5-5733D0F4D826", 284, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "PIÑA", "2015", "AÑO", "11", "11", "440.0", "40" ]
+, [ 285, "C237E3C0-1425-48D4-8691-2459128E9BB1", 285, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "PLATANO", "2015", "AÑO", "70", "65", "715.0", "11" ]
+, [ 286, "1FC520D0-8D7C-4AF9-862E-C562A11C1166", 286, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "YUCA", "2015", "AÑO", "35", "35", "525.0", "15" ]
+, [ 287, "88A0A4D0-E152-4C15-8279-55F54F44A772", 287, 1504238762, "983097", 1504238762, "983097", null, "META", "GUAMAL", "ZAPOTE", "2015", "AÑO", "10", "10", "200.0", "20" ]
+, [ 288, "D159C987-5F46-474D-9008-C77268AD4DA2", 288, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "ARROZ  SECANO", "2015", "A", "360", "360", "1800.0", "5" ]
+, [ 289, "5B0E223B-3604-48B1-9CD1-66C7F661C219", 289, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "ARROZ RIEGO", "2015", "A", "75", "75", "375.0", "5" ]
+, [ 290, "4C56C9B4-F787-4C80-B2DB-FB4E417C9BB1", 290, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "ARROZ RIEGO", "2015", "B", "248", "248", "1116.0", "4.5" ]
+, [ 291, "F8BD08E7-C96C-4BA6-9331-46692443C12F", 291, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "CACAO ", "2015", "AÑO", "80", "70", "70.0", "1" ]
+, [ 292, "ACB9F252-00DD-4005-AAC7-266A120EB965", 292, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "CAÑA PANELERA", "2015", "AÑO", "11", "10", "25.0", "2.5" ]
+, [ 293, "F235B12F-096E-4C00-B007-C8F68C45FA5D", 293, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "CAUCHO", "2015", "AÑO", "260", "220", "440.0", "2" ]
+, [ 294, "365E74DD-2DC5-4DD3-AB9A-F232C27BF576", 294, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "CITRICOS ", "2015", "AÑO", "136", "116", "1740.0", "15" ]
+, [ 295, "925CAEDE-337B-4B0D-B7DE-93753F82D99E", 295, 1504238762, "983097", 1504238762, "983097", null, "META ", "SAN MARTIN ", "MAIZ FORRAJERO", "2015", "A", "300", "300", "1200.0", "4" ]
+, [ 296, "2919D1CA-0D89-40C3-8BB1-9CF5E2BFDC0F", 296, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "MAIZ FORRAJERO", "2015", "B", "300", "300", "1050.0", "3.5" ]
+, [ 297, "95F687F8-0F7D-4F7A-8F3F-2254A6A604A0", 297, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "MRACUYA", "2015", "AÑO", "15", "10", "250.0", "25" ]
+, [ 298, "2C9848A1-DEE0-45D8-A192-7E387F3CFD0B", 298, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "PALMA DE ACEITE", "2015", "AÑO", "19220", "15100", "302000.0", "20" ]
+, [ 299, "B99352A9-94D3-4C91-A782-5C1533F767DD", 299, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "PAPAYA ", "2015", "AÑO", "13", "10", "300.0", "30" ]
+, [ 300, "17D37CEB-1C7F-4F5E-A931-CD90BC215E30", 300, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "PATILLA", "2015", "A", "1200", "1000", "35000.0", "35" ]
+, [ 301, "91861A44-D09C-4B4C-9E3A-222AA0380123", 301, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "PATILLA", "2015", "B", "700", "700", "24500.0", "35" ]
+, [ 302, "F514A795-3B1A-4AA0-B9BD-656539A8A253", 302, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "PIÑA", "2015", "AÑO", "350", "150", "5250.0", "35" ]
+, [ 303, "996EBA89-E246-4EE5-858D-D4BB281CF0CC", 303, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "PLATANO", "2015", "AÑO", "164", "164", "2460.0", "15" ]
+, [ 304, "77F53181-18CB-4438-AD8C-AD54094DF6A8", 304, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "AUYAMA", "2015", "A", "7", "7", "91.0", "13" ]
+, [ 305, "1151D3E2-EB2D-4EAD-B51E-581FC261DE25", 305, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "AUYAMA", "2015", "B", "8", "8", "104.0", "13" ]
+, [ 306, "DFAD880C-F341-4474-B4C7-EB64B15F5D2C", 306, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "YUCA", "2015", "AÑO", "200", "200", "3000.0", "15" ]
+, [ 307, "C886735E-04B1-43CB-8FE6-C387991D5C7E", 307, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "CACAO ", "2015", "AÑO", "155", "155", "77.5", "0.5" ]
+, [ 308, "C30A2C6D-22D7-4FE3-8913-8E8EE56DD5D0", 308, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "AGUACATE", "2015", "AÑO", "17", "10", "130.0", "13" ]
+, [ 309, "4AFB72EC-2637-4EA1-BB71-1D5B5C6CC733", 309, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "CAFÉ", "2015", "AÑO", "445", "395", "592.5", "1.5" ]
+, [ 310, "FC517C39-050F-4D71-95D9-F744DFCF7672", 310, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "CITRICOS ", "2015", "AÑO", "32", "20", "400.0", "20" ]
+, [ 311, "D4ABF1EC-245F-4EBE-A94A-B9A02CFD9562", 311, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "MAIZ FORRAJERO", "2015", "A", "5", "5", "20.0", "4" ]
+, [ 312, "6EEFCCE7-5D52-40A0-B535-6CA496A406D7", 312, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "MAIZ FORRAJERO", "2015", "B", "5", "5", "17.5", "3.5" ]
+, [ 313, "7FE5C36E-9D41-4110-A55A-638A6F3FA276", 313, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "MAIZ TRADICIONAL ", "2015", "A", "80", "80", "160.0", "2" ]
+, [ 314, "2A22D34E-7CA6-41B9-9868-428C7030B1C6", 314, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "MAIZ TRADICIONAL ", "2015", "B", "50", "50", "100.0", "2" ]
+, [ 315, "B19A7016-1E7D-4906-A85E-E48A2CD83B94", 315, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "PAPAYA ", "2015", "AÑO", "7", "4", "176.0", "44" ]
+, [ 316, "5A97DC5C-FA14-4CE4-B29A-15C480A80705", 316, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "PLATANO", "2015", "AÑO", "30", "30", "480.0", "16" ]
+, [ 317, "433A411F-0391-4A9B-9891-37721998DCA2", 317, 1504238762, "983097", 1504238762, "983097", null, "META", "CUBARAL", "YUCA", "2015", "AÑO", "30", "30", "330.0", "11" ]
+, [ 318, "24959A1B-1457-4FDA-AB50-537AFD952AD5", 318, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "MAIZ BLANCO", "2015", "A", "30", "30", "144.0", "4.8" ]
+, [ 319, "AC44410C-5CF2-4637-ADD8-3F6141D4754D", 319, 1504238762, "983097", 1504238762, "983097", null, "META", "EL CASTILLO", "MAIZ BLANCO", "2015", "B", "30", "30", "144.0", "4.8" ]
+, [ 320, "32B52D31-26B7-41BE-A2A8-74DC0E185B9E", 320, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MAIZ BLANCO", "2015", "A", "30", "30", "150.0", "5" ]
+, [ 321, "426D9EAB-0B28-4CA7-9365-122BF04C3DF8", 321, 1504238762, "983097", 1504238762, "983097", null, "META", "FUENTE DE ORO", "MAIZ BLANCO", "2015", "B", "22", "22", "110.0", "5" ]
+, [ 322, "931152A2-1B3E-4296-8BB8-9DBF58201ECD", 322, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "PALMA DE ACEITE", "2015", "AÑO", "20000", "16000", "512000.0", "32" ]
+, [ 323, "D109400E-D342-4FCB-BB52-9C0287BCE7A7", 323, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "CITRICOS", "2015", "AÑO", "320", "280", "5600.0", "20" ]
+, [ 324, "D37DE1C9-2612-4169-BD1B-BDF0B35B3024", 324, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "CAUCHO", "2015", "AÑO", "120", "60", "120.0", "2" ]
+, [ 325, "54C0B440-1357-4E21-9EB7-95F1C58AF590", 325, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "CACAO", "2015", "AÑO", "402", "382", "191.0", "0.5" ]
+, [ 326, "4D6448A6-1A13-409E-8BA3-61799F8D528A", 326, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "CAÑA PANELERA", "2015", "AÑO", "62", "52", "104.0", "2" ]
+, [ 327, "143551D5-F259-491B-BD9B-2613A505884F", 327, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "PLATANO", "2015", "AÑO", "55", "40", "360.0", "9" ]
+, [ 328, "ED75CF1D-0BDE-40A5-8C03-56BEC7DDF1D3", 328, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "PIÑA", "2015", "AÑO", "115", "90", "3600.0", "40" ]
+, [ 329, "F0C9A730-75F1-4A20-B8B8-2B4AAB48DF8C", 329, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "MARACUYA", "2015", "AÑO", "50", "40", "640.0", "16" ]
+, [ 330, "90D70236-D353-47D3-BF1D-AFF1DF81CCB0", 330, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "YUCA", "2015", "AÑO", "50", "50", "650.0", "13" ]
+, [ 331, "2E01F428-33C4-40D7-8C36-41ED5F5AB994", 331, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "MANGOSTINO", "2015", "AÑO", "56", "44", "176.0", "4" ]
+, [ 332, "5A6725FE-917C-4885-A295-AE7CDE4F0432", 332, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "RAMBUTAN", "2015", "AÑO", "8", "5", "20.0", "4" ]
+, [ 333, "2F623CE0-538B-4C6F-8F75-A7E5DCBDFB54", 333, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "ARROZ RIEGO", "2015A", "A", "55", "55", "275.0", "5" ]
+, [ 334, "734FE8DE-DC58-4E8C-80CD-1FD5981B5169", 334, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "ARROZ SECANO MECANIZADO", "2015A", "A", "176", "176", "968.0", "5.5" ]
+, [ 335, "D81D751B-31FB-4B13-BC07-972E77D461AF", 335, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "PATILLA", "2015A", "A", "40", "40", "1000.0", "25" ]
+, [ 336, "2EE9A663-3A51-4772-9689-BFCB2A3EB3A5", 336, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "PATILLA", "2015B", "B", "65", "65", "1625.0", "25" ]
+, [ 337, "F851DA4B-528D-421D-AD4F-B47149A23F57", 337, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "CAFÉ", "2015", "AÑO", "80", "80", "120.0", "1.5" ]
+, [ 338, "B2D8A8F6-A3B2-40FE-9482-0A9230A66485", 338, 1504238762, "983097", 1504238762, "983097", null, "META", "ACACIAS", "LULO", "2015", "AÑO", "3", "3", "27.0", "9" ]
+, [ 339, "02D2CC30-0B3F-453C-B2C8-FBCB007C40FB", 339, 1504238762, "983097", 1504238762, "983097", null, null, "ACACIAS", "PLANTAS AROMATICAS", "2015", "AÑO", "3", "3", "15.0", "5" ]
+, [ 340, "AE898C61-A84F-4BFA-8FEB-AE2F7AF1A84F", 340, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "CITRICOS", "2015", "AÑO", "40", "40", "1000.0", "25" ]
+, [ 341, "29D027AA-5201-44BF-A54D-EB76E7B44F99", 341, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "PIÑA", "2015", "AÑO", "33", "25", "1000.0", "40" ]
+, [ 342, "07A84B6B-CE72-4EF6-8CA8-2BCE90ABBCB9", 342, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "PALMA DE ACEITE", "2015", "AÑO", "16492", "13200", "396000.0", "30" ]
+, [ 343, "1B16271E-AA7E-449F-86B5-4B75A576598A", 343, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "CACAO", "2015", "AÑO", "70", "32", "25.6", "0.8" ]
+, [ 344, "AA3F0DD7-12F7-4F7E-8995-7C1A7706625E", 344, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "PLATANO", "2015", "AÑO", "208", "140", "1260.0", "9" ]
+, [ 345, "AB1F2A00-3A0D-44D2-B23A-B3614422EFAC", 345, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "MARACUYA", "2015", "AÑO", "4", "2", "32.0", "16" ]
+, [ 346, "26B50DB5-7342-49EC-B70E-448981511BAC", 346, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "YUCA", "2015", "AÑO", "20", "20", "280.0", "14" ]
+, [ 347, "6CDD1290-55D4-4A1E-96D2-E1A8546492E6", 347, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "ARROZ RIEGO", "2015A", "A", "400", "400", "2000.0", "5" ]
+, [ 348, "DAF9775B-FE94-4DB5-9AC6-9CB35CC9ADE4", 348, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "ARROZ SECANO MECANIZADO", "2015A", "A", "3100", "3100", "16430.0", "5.3" ]
+, [ 349, "3B080481-3869-4C20-ABC9-7EFA5C8F246C", 349, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "MAIZ TECNIFICADO", "2015A", "A", "280", "280", "1120.0", "4" ]
+, [ 350, "B9F0BC33-64AC-451F-B57F-8B0052278FA2", 350, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "MAIZ TRADICIONAL", "2015A", "A", "12", "12", "21.6", "1.8" ]
+, [ 351, "5B8F179C-8907-40D8-B99A-CF5D8BC4944B", 351, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "ARROZ RIEGO", "2015B", "B", "1350", "1350", "7155.0", "5.3" ]
+, [ 352, "E68DCB70-B559-4D05-9837-EAF673B7C6C3", 352, 1504238762, "983097", 1504238762, "983097", null, null, "CABUYARO", "MAIZ TRADICIONAL", "2015", "B", "10", "10", "18.0", "1.8" ]
+, [ 353, "D46D0ECB-2359-48B0-BF73-7ADB786391E8", 353, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "MAIZ TECNIFICADO", "2015B", "B", "25", "25", "50.0", "2" ]
+, [ 354, "61CB7390-0B27-4A5B-8E1E-FD0FFA5AEE32", 354, 1504238762, "983097", 1504238762, "983097", null, "META", "CABUYARO", "SOYA", "2015B", "B", "125", "125", "312.5", "2.5" ]
+, [ 355, "077A450F-32F1-4467-B8D1-7D5F6B30824A", 355, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "PALMA DE ACEITE", "2015", "AÑO", "29000", "15000", "450000.0", "30" ]
+, [ 356, "EB51842F-ACCC-4690-9560-1D1B30C8E299", 356, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "CACAO", "2015", "AÑO", "156", "70", "105.0", "1.5" ]
+, [ 357, "1BB5D276-6737-4A0F-B3FB-29E7CC8896DC", 357, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "CAÑA PANELERA", "2015", "AÑO", "50", "42", "84.0", "2" ]
+, [ 358, "8D9C39B2-39ED-49F7-BD38-9F9B1FD32335", 358, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "PLATANO", "2015", "AÑO", "90", "80", "720.0", "9" ]
+, [ 359, "65921BA1-30C0-47F6-BD5E-991B31CD3D46", 359, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "CAUCHO", "2015", "AÑO", "3800", "50", "100.0", "2" ]
+, [ 360, "F784A9BB-7CFA-4D78-8175-63754B1183B6", 360, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "YUCA", "2015", "AÑO", "300", "300", "3600.0", "12" ]
+, [ 361, "451D5172-2989-4F04-B094-E1EFA3865531", 361, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "ARROZ SECANO MECANIZADO", "2015A", "A", "3150", "3150", "17325.0", "5.5" ]
+, [ 362, "F73AE7C7-8E11-41EF-86BE-90DAC460930B", 362, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "MAIZ TECNIFICADO", "2015A", "A", "3700", "3700", "24050.0", "6.5" ]
+, [ 363, "3B2E34EF-5788-4C1B-AB2D-44FD1B4115D9", 363, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "SOYA", "2015A", "A", "6720", "6720", "16800.0", "2.5" ]
+, [ 364, "19CDBA76-827F-4D9E-8BC6-D023BEBF5388", 364, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "MAIZ TRADICIONAL", "2015A", "A", "46", "46", "138.0", "3" ]
+, [ 365, "2DFAD2B4-CCDC-48E6-89D7-7C5995B5A4E9", 365, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "MAIZ TECNIFICADO", "2015B", "B", "6700", "6700", "43550.0", "6.5" ]
+, [ 366, "37CBD264-382A-4BB3-8F9B-7B75415BE42F", 366, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO GAITAN", "SOYA", "2015B", "B", "3700", "3700", "9250.0", "2.5" ]
+, [ 367, "3D15B88D-8348-46E9-9436-1023C97CC270", 367, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "CAUCHO", "2015", "AÑO", "13828", "1200", "2400.0", "2" ]
+, [ 368, "F1EB1308-897B-48C6-9D44-17DB8392785D", 368, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "CITRICOS", "2015", "AÑO", "57", "42", "840.0", "20" ]
+, [ 369, "B7127625-91B2-4910-BB57-88553AA5193D", 369, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "MARACUYA", "2015", "AÑO", "30", "20", "320.0", "16" ]
+, [ 370, "57070E01-3FD5-4034-829A-B257E12D6BDA", 370, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "PAPAYA", "2015", "AÑO", "30", "19", "760.0", "40" ]
+, [ 371, "E7B1334A-5640-4965-B457-497360D3BB75", 371, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "PIÑA", "2015", "AÑO", "53", "38", "1520.0", "40" ]
+, [ 372, "D6A9E6A3-FCE5-4D50-A16A-7B838F1A5F5F", 372, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "PALMA DE ACEITE", "2015", "AÑO", "3050", "3050", "100650.0", "33" ]
+, [ 373, "D72BCF2E-ADD6-4900-B435-471C5AC96B58", 373, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "CACAO", "2015", "AÑO", "150", "80", "72.0", "0.9" ]
+, [ 374, "1C64CCEC-2A2A-4AE3-BF08-F2AA8EC60A60", 374, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "CAÑA AZUCARERA", "2015", "AÑO", "11008", "7065", "35325.0", "5" ]
+, [ 375, "544F502D-1D1C-409E-87E6-C355E1D0C386", 375, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "PLATANO", "2015", "AÑO", "60", "60", "720.0", "12" ]
+, [ 376, "C8EF978D-3143-4632-85FA-E18BA6EE5DBE", 376, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "YUCA", "2015", "AÑO", "45", "45", "630.0", "14" ]
+, [ 377, "7006E5DD-2361-472F-B9E8-E78DBA116CD6", 377, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "ARROZ RIEGO", "2015A", "A", "140", "140", "910.0", "6.5" ]
+, [ 378, "A2D4A03D-8618-481A-B106-3CF4EC037456", 378, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "ARROZ SECANO MECANIZADO", "2015A", "A", "5612", "5612", "33672.0", "6" ]
+, [ 379, "F2C34D14-2685-45EC-8511-668CE59538E9", 379, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "MAIZ TECNIFICADO", "2015A", "A", "1294", "1294", "7764.0", "6" ]
+, [ 380, "DE834D1C-ACA0-4A52-B05B-1CEC4EC710E7", 380, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "MAIZ TRADICIONAL", "2015A", "A", "46", "46", "82.8", "1.8" ]
+, [ 381, "2A7B2566-5F91-4079-B614-D19508B96407", 381, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "MAIZ FORRAJERO", "2015A", "A", "50", "50", "1200.0", "24" ]
+, [ 382, "D3B5C8E6-80E5-4F80-9342-2D3E10F314A8", 382, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "PATILLA", "2015A", "A", "65", "65", "2600.0", "40" ]
+, [ 383, "D1F96D80-3295-4BA3-A798-EBE4A9CC0E00", 383, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "SOYA", "2015A", "A", "3700", "3700", "8140.0", "2.2" ]
+, [ 384, "3E35842F-6D44-43C1-9291-816C5612C656", 384, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "ARROZ RIEGO", "2015B", "B", "2450", "2450", "14700.0", "6" ]
+, [ 385, "A63C3DA4-0DED-4A04-9339-5F7B7296B178", 385, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "ARROZ SECANO MECANIZADO", "2015B", "B", "1420", "1420", "7100.0", "5" ]
+, [ 386, "AD590510-1472-4B09-9D88-00544CB4001F", 386, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "MAIZ TECNIFICADO", "2015B", "B", "3426", "3426", "20556.0", "6" ]
+, [ 387, "771E8581-F494-46AD-9309-893CD4F40589", 387, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "MAIZ FORRAJERO", "2015B", "B", "108", "108", "2700.0", "25" ]
+, [ 388, "87A019A0-C84F-43F6-8B9D-0A69E840E634", 388, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "PATILLA", "2015B", "B", "46", "46", "1610.0", "35" ]
+, [ 389, "726EDD17-5663-4EB9-AB19-741F9BAC26D5", 389, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "MAIZ TRADICIONAL", "2015B", "B", "15", "15", "42.0", "2.8" ]
+, [ 390, "A699D287-3921-4C27-ADBD-B3D9A2B7C28F", 390, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "SOYA", "2015B", "B", "8290", "8290", "16580.0", "2" ]
+, [ 391, "80F47892-9896-4EB6-8679-6B3C4EC5F196", 391, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LOPEZ", "CAFÉ", "2015", "AÑO", "30", "0", "0.0", "0" ]
+, [ 392, "F2B279F5-7D4A-41AC-A790-068911C00F05", 392, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "ARROZ SECANO MECANIZADO ", "2015", "A", "2800", "2800", "18200.0", "6.5" ]
+, [ 393, "979C5A1C-4907-4937-9A38-8897FB960D41", 393, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "MAIZ TECNIFICADO", "2015", "A", "340", "340", "2040.0", "6" ]
+, [ 394, "333028AA-2D2C-420E-A864-246276DDE59D", 394, 1504238762, "983097", 1504238762, "983097", null, "META ", "VISTA HERMOSA", "MAIZ TRADICIONAL", "2015", "A", "100", "100", "180.0", "1.8" ]
+, [ 395, "1BF72AD9-4743-4D28-8B75-A5F45C5F9FEC", 395, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "PATILLA", "2015", "A", "35", "35", "1225.0", "35" ]
+, [ 396, "C22855A8-5248-4A31-A4E2-FC9DA4216313", 396, 1504238762, "983097", 1504238762, "983097", null, "META  ", "VISTA HERMOSA", "MAIZ BLANCO", "2015", "A", "100", "100", "3500.0", "35" ]
+, [ 397, "FBD5727A-2955-47C3-A228-357B2F34EF38", 397, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "MAIZ TECNIFICADO", "2015", "B", "920", "920", "5520.0", "6" ]
+, [ 398, "C7D103CF-AFCE-40B6-AF22-71F27DE070EF", 398, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "MAIZ TRADICIONAL", "2015", "B", "400", "400", "720.0", "1.8" ]
+, [ 399, "12B6C151-2965-469F-B5BD-6DBB4F20DDD9", 399, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "PATILLA", "2015", "B", "30", "30", "1050.0", "35" ]
+, [ 400, "BD66689F-C285-430A-B22C-8F42E8A0179B", 400, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "MAIZ BLANCO", "2015", "B", "60", "60", "330.0", "5.5" ]
+, [ 401, "A6F38C02-59A9-4F9E-B0F0-E366F5C7C1FF", 401, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "SOYA", "2015", "B", "320", "320", "832.0", "2.6" ]
+, [ 402, "0E9FE1F1-3D39-4F9F-8933-4F033C1E38B7", 402, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "YUCA", "2015", "AÑO", "420", "420", "7560.0", "18" ]
+, [ 403, "E6E9AE4B-6ED7-4F4E-BC54-A3C0BC9B8E6B", 403, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "AGUACATE", "2015", "AÑO", "21", "12", "132.0", "11" ]
+, [ 404, "7285578B-6754-4D20-AA66-C8481C66D3A6", 404, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "CACAO", "2015", "AÑO", "1250", "1004", "903.6", "0.9" ]
+, [ 405, "D5D7C5CD-1E11-4F20-8AFF-51E6DA852426", 405, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "CAÑA PANELERA", "2015", "AÑO", "80", "80", "208.0", "2.6" ]
+, [ 406, "E6A1AC27-131D-4992-A77C-CE7A28F239EE", 406, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "CAUCHO", "2015", "AÑO", "255", "80", "192.0", "2.4" ]
+, [ 407, "EC2C2D18-77C8-4467-830E-009A17034936", 407, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "CITRICOS", "2015", "AÑO", "58", "48", "1248.0", "26" ]
+, [ 408, "739C1EC2-7A33-405B-9BD8-7466ADD76C4C", 408, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "GUANABANA", "2015", "AÑO", "5", "5", "35.0", "7" ]
+, [ 409, "F7C1A519-7254-4CDF-9BC9-413CF41477CB", 409, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "GUAYABA", "2015", "AÑO", "27", "23", "230.0", "10" ]
+, [ 410, "055EBA31-DE26-4942-BEE0-00374C61AFCC", 410, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "MARACUYA", "2015", "AÑO", "18", "15", "300.0", "20" ]
+, [ 411, "052F39A8-9AF9-470B-A731-FD9D46FEDB78", 411, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "PALMA DE ACEITE", "2015", "AÑO", "7500", "6480", "155520.0", "24" ]
+, [ 412, "9568EDB1-31C1-43C0-9C4D-A723D0058AF2", 412, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "PAPAYA", "2015", "AÑO", "118", "118", "3304.0", "28" ]
+, [ 413, "907B00E9-607B-46BB-811E-F65CBE4EBB1B", 413, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "PIÑA", "2015", "AÑO", "123", "108", "4536.0", "42" ]
+, [ 414, "D286A15D-4A3D-4F83-B28D-676D07678D1C", 414, 1504238762, "983097", 1504238762, "983097", null, "META", "VISTA HERMOSA", "PLATANO", "2015", "AÑO", "335", "290", "5800.0", "20" ]
+, [ 415, "B598F053-7808-4695-84AD-C024A71A11D6", 415, 1504238762, "983097", 1504238762, "983097", null, "META ", "SAN JUAN DE ARAMA", "ARROZ SECANO MECANIZADO ", "2015", "A", "180", "180", "1170.0", "6.5" ]
+, [ 416, "5FDC6B39-99A3-4500-89B3-ED6EC4C190D7", 416, 1504238762, "983097", 1504238762, "983097", null, "META ", "SAN JUAN DE ARAMA", "ARROZ RIEGO", "2015", "A", "80", "80", "520.0", "6.5" ]
+, [ 417, "A2E6B924-36BB-4553-9FB7-A9E33DF00722", 417, 1504238762, "983097", 1504238762, "983097", null, "META ", "SAN JUAN DE ARAMA", "ARROZ RIEGO", "2015", "B", "50", "50", "325.0", "6.5" ]
+, [ 418, "3403CA8F-C423-4323-9D0D-16CC2F34818E", 418, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "MAIZ TECNIFICADO", "2015", "A", "100", "100", "600.0", "6" ]
+, [ 419, "518B31D6-9F1F-46F7-84F9-28C3E23712D5", 419, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "MAIZ TRADICIONAL", "2015", "A", "450", "450", "810.0", "1.8" ]
+, [ 420, "82832EDE-074E-4112-9957-B9DDECE881AD", 420, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "MAIZ BLANCO", "2015", "A", "60", "60", "300.0", "5" ]
+, [ 421, "C56DCA79-EF2E-4B4C-B114-735883856AF5", 421, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "MAIZ BLANCO", "2015", "B", "40", "40", "200.0", "5" ]
+, [ 422, "C68AD2E5-E3DC-43EF-83C3-A3588F065269", 422, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "PATILLA", "2015", "A", "18", "18", "630.0", "35" ]
+, [ 423, "44B56DCD-1E1F-4A95-8B43-B6C83A638CD6", 423, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "MAIZ TECNIFICADO", "2015", "B", "50", "50", "300.0", "6" ]
+, [ 424, "3237F7FE-B2B7-4CB1-87D9-FE566347B9BC", 424, 1504238762, "983097", 1504238762, "983097", null, "META ", "SAN JUAN DE ARAMA", "MAIZ TRADICIONAL", "2015", "A", "500", "500", "900.0", "1.8" ]
+, [ 425, "B02F8D75-87E8-490A-B264-FBEBBD6D4D3C", 425, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "PATILLA", "2015", "B", "16", "16", "560.0", "35" ]
+, [ 426, "55B53526-AA12-41D2-8ABB-87ED63EDFB2A", 426, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "YUCA", "2015", "AÑO", "150", "150", "2700.0", "18" ]
+, [ 427, "87381912-8264-4DB6-9AE1-EDE76E7BD42A", 427, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "AGUACATE", "2015", "AÑO", "69", "57", "399.0", "7" ]
+, [ 428, "9D3CB864-D6A7-4A32-BAEE-8252857F440C", 428, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "CACAO", "2015", "AÑO", "155", "120", "108.0", "0.9" ]
+, [ 429, "D243A144-E9F8-4470-99D8-0C8ED4B5D44B", 429, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "CAFÉ", "2015", "AÑO", "272", "158", "189.6", "1.2" ]
+, [ 430, "7FB746CC-D7B8-4CDB-8908-C4399A3F7A66", 430, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "CAÑA PANELERA", "2015", "AÑO", "30", "30", "75.0", "2.5" ]
+, [ 431, "470E55C4-98DA-4880-9EF3-4B6F6E597574", 431, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "CAUCHO", "2015", "AÑO", "10", "10", "12.0", "1.2" ]
+, [ 432, "70474218-FFB5-4B4B-99C2-C18A8DD6521A", 432, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "CITRICOS", "2015", "AÑO", "210", "173", "2595.0", "15" ]
+, [ 433, "5ABE971F-5D29-4FA8-8A97-9D0E8C3401C4", 433, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "GUAYABA", "2015", "AÑO", "60", "60", "360.0", "6" ]
+, [ 434, "78691434-F386-4536-8DAF-4420B3451B7C", 434, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "MARACUYA", "2015", "AÑO", "95", "89", "1780.0", "20" ]
+, [ 435, "905FFE09-BED3-4DA6-95C0-A1B8AC99A6E9", 435, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "PALMA DE ACEITE", "2015", "AÑO", "4480", "3280", "75440.0", "23" ]
+, [ 436, "701A631A-DD1D-4766-9A73-63ED64F8234A", 436, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "PAPAYA", "2015", "AÑO", "40", "40", "1280.0", "32" ]
+, [ 437, "BC7AF591-43C6-42D1-A615-1BA4A589EB9D", 437, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "PIÑA", "2015", "AÑO", "25", "15", "525.0", "35" ]
+, [ 438, "71F03F5C-06B5-4C6B-AA75-C5D2D6670629", 438, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN JUAN DE ARAMA", "PLATANO", "2015", "AÑO", "240", "240", "4320.0", "18" ]
+, [ 439, "3B19E609-7F25-4B09-8FB2-AF0F74DDA8BB", 439, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "ARROZ SECANO MECANIZADO ", "2015", "A", "1400", "1400", "8120.0", "5.8" ]
+, [ 440, "004F30CC-7A4F-4532-9066-D47898ED9309", 440, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "MAIZ TECNIFICADO", "2015", "A", "650", "650", "3900.0", "6" ]
+, [ 441, "4ACB063D-8A0C-46E2-8AD2-26E7D25D53D3", 441, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "MAIZ TRADICIONAL", "2015", "A", "40", "40", "60.0", "1.5" ]
+, [ 442, "B3686EA0-F69C-46AA-8C6E-A793EDE1EC6E", 442, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "PATILLA", "2015", "A", "150", "150", "5250.0", "35" ]
+, [ 443, "F48B5160-2055-4A97-B1BE-44B33217E9C0", 443, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "AHUYAMA", "2015", "A", "8", "8", "112.0", "14" ]
+, [ 444, "FEC57468-DD58-4BEC-AE28-5AC44A045827", 444, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "MAIZ TECNIFICADO", "2015", "B", "250", "250", "1500.0", "6" ]
+, [ 445, "3E68346F-0003-4E65-A950-E04A545A10D7", 445, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "MAIZ TRADICIONAL", "2015", "B", "60", "60", "90.0", "1.5" ]
+, [ 446, "DE6B7522-DD1F-433F-941E-F2D07E98905B", 446, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "PATILLA", "2015", "B", "90", "90", "3150.0", "35" ]
+, [ 447, "C89C9A19-556F-4E6C-BD53-8F4E64D2CF8C", 447, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "SOYA", "2015", "B", "100", "100", "260.0", "2.6" ]
+, [ 448, "D74940B6-AABB-4059-AC09-E2A71E3F10BD", 448, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "YUCA", "2015", "AÑO", "180", "180", "3240.0", "18" ]
+, [ 449, "46C21187-E2BA-4449-A6D9-6AA31703CE61", 449, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "AGUACATE", "2015", "AÑO", "7", "0", "0.0", null ]
+, [ 450, "7684CB7B-1A74-46F7-BBC8-BCDB2B2F6F85", 450, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "CACAO", "2015", "AÑO", "421", "331", "297.9", "0.9" ]
+, [ 451, "C5AC2CA8-3708-453A-8853-3BF639148C2B", 451, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "CAÑA PANELERA", "2015", "AÑO", "80", "80", "200.0", "2.5" ]
+, [ 452, "33DB7779-897E-4DA4-91D4-8500FA22830C", 452, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "CAUCHO", "2015", "AÑO", "14", "14", "16.8", "1.2" ]
+, [ 453, "28E8C6B3-9B26-4E72-AD15-B78E69E7124F", 453, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "CITRICOS", "2015", "AÑO", "12", "10", "180.0", "18" ]
+, [ 454, "5CDE2D5E-E3EA-457A-A929-FD4571D4E858", 454, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "MARACUYA", "2015", "AÑO", "184", "174", "3480.0", "20" ]
+, [ 455, "E4BBF812-BFC9-4A1B-89EE-578330DD5784", 455, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "PALMA DE ACEITE", "2015", "AÑO", "5750", "4800", "100800.0", "21" ]
+, [ 456, "D481E64B-569A-4E6D-945D-6AEF4F424C03", 456, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "PAPAYA", "2015", "AÑO", "13", "13", "455.0", "35" ]
+, [ 457, "6EA0911D-321C-404F-9E73-496CCF69E553", 457, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "PIÑA", "2015", "AÑO", "16", "12", "480.0", "40" ]
+, [ 458, "5607C016-ED91-4FC7-BCCD-60D621000F93", 458, 1504238762, "983097", 1504238762, "983097", null, "META", "PUERTO LLERAS", "PLATANO", "2015", "AÑO", "2500", "2350", "42300.0", "18" ]
+, [ 459, "330ED7D4-4EB9-4211-AD67-81C052175035", 459, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "ARROZ RIEGO", "2015", "A", "210", "210", "1323.0", "6.3" ]
+, [ 460, "DECB8476-1D3F-40EA-A624-2752F1022FC8", 460, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "ARROZ SECANO MECANIZADO ", "2015", "A", "2500", "2500", "16000.0", "6.4" ]
+, [ 461, "0D2660C7-0334-4AF4-96C0-B5AC9CCF9068", 461, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ FORRAJERO", "2015", "A", "40", "40", "180.0", "4.5" ]
+, [ 462, "8FCE73B9-F9AF-4434-9BCF-CE7D0D689809", 462, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ TECNIFICADO", "2015", "A", "2500", "2500", "15000.0", "6" ]
+, [ 463, "A9B2E09A-10D4-4727-9535-B255E1F1210B", 463, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ BLANCO", "2015", "A", "150", "150", "825.0", "5.5" ]
+, [ 464, "7A0C826A-3ED9-41CC-B892-61D6EB7AA8FA", 464, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ TRADICIONAL", "2015", "A", "15", "15", "27.0", "1.8" ]
+, [ 465, "ECE93522-D289-464F-B66C-846B80E1B01B", 465, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "ARROZ RIEGO", "2015", "B", "150", "150", "900.0", "6" ]
+, [ 466, "9EF59A3C-F9B2-4878-804D-1D4EDD2D90B0", 466, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "ARROZ SECANO MECANIZADO ", "2015", "B", "350", "350", "2205.0", "6.3" ]
+, [ 467, "3861B2BA-1E71-4848-B9ED-11E757BE3C46", 467, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ FORRAJERO", "2015", "B", "40", "40", "180.0", "4.5" ]
+, [ 468, "57E1DC8F-4FD5-4E60-8038-101B5725C437", 468, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ TECNIFICADO", "2015", "B", "1700", "1700", "10200.0", "6" ]
+, [ 469, "DA47C737-9F8A-493F-B5EA-0F05B503DB10", 469, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ BLANCO", "2015", "B", "118", "118", "649.0", "5.5" ]
+, [ 470, "23C7E3DE-88CE-446F-8EE5-25BEC1EB1928", 470, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MAIZ TRADICIONAL", "2015", "B", "20", "20", "36.0", "1.8" ]
+, [ 471, "809DB9FE-67E9-4872-9A88-52CC705412EF", 471, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "SOYA", "2015", "B", "260", "260", "676.0", "2.6" ]
+, [ 472, "92880791-F250-49C0-A2CA-71D2A6DF3326", 472, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "YUCA", "2015", "AÑO", "700", "700", "12600.0", "18" ]
+, [ 473, "19854ED9-0F56-4189-9778-F250C51DA727", 473, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "AGUACATE", "2015", "AÑO", "42", "28", "252.0", "9" ]
+, [ 474, "08239BBB-8115-4854-8F22-6B09F3545DF7", 474, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "CACAO", "2015", "AÑO", "824", "692", "622.8", "0.9" ]
+, [ 475, "E1E09D8E-28CA-4263-ABA4-C8FB8BCA96EB", 475, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "CAÑA PANELERA", "2015", "AÑO", "115", "115", "287.5", "2.5" ]
+, [ 476, "FECD518F-15CA-449C-87FE-4ECD57702A91", 476, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "CAUCHO", "2015", "AÑO", "2", "2", "2.4", "1.2" ]
+, [ 477, "B7BB5351-21CF-4F8D-B339-DF7F7D0FAE22", 477, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "CITRICOS", "2015", "AÑO", "230", "196", "3528.0", "18" ]
+, [ 478, "AA255E25-48D3-407E-BA69-D00D4D137783", 478, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "GUAYABA", "2015", "AÑO", "300", "300", "1650.0", "5.5" ]
+, [ 479, "A771359E-BC79-4FAC-AD36-9D4942C15251", 479, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "MARACUYA", "2015", "AÑO", "315", "300", "5700.0", "19" ]
+, [ 480, "0D294D90-E92E-4AD5-BDB8-D0DBCAE7DEAC", 480, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "PALMA DE ACEITE", "2015", "AÑO", "950", "576", "9216.0", "16" ]
+, [ 481, "E61370CA-0660-4E9E-B107-D275DC675E86", 481, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "PAPAYA", "2015", "AÑO", "37", "37", "814.0", "22" ]
+, [ 482, "6C501AA6-DDAA-4B6D-9F09-38FB20B660EB", 482, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "PIÑA", "2015", "AÑO", "352", "352", "12320.0", "35" ]
+, [ 483, "E9B7AEC4-9754-4777-AC1D-CB54E72BCB96", 483, 1504238762, "983097", 1504238762, "983097", null, "META", "GRANADA", "PLATANO", "2015", "AÑO", "1980", "1900", "34200.0", "18" ]
+, [ 484, "AB48181C-C6F6-4B88-9DC7-2A8835B3F23B", 484, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "MAIZ TECNIFICADO", "2015", "A", "46", "46", "230.0", "5" ]
+, [ 485, "67E86F83-FCD5-4FB4-8711-98C90B3C52AF", 485, 1504238762, "983097", 1504238762, "983097", null, "META", "SAN MARTIN ", "MAIZ TECNIFICADO", "2015", "B", "30", "30", "150.0", "5" ]
+, [ 486, "55E6B2E2-F3EC-4661-8967-467D413076E9", 486, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "CACAO", "2015", "AÑO", "120", "80", "80.0", "1" ]
+, [ 487, "C2E752FE-DF9D-4D47-939A-0833DFEA30F7", 487, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "CAÑA PANELERA ", "2015", "AÑO", "70", "70", "154.0", "2.2" ]
+, [ 488, "280ADF30-6FBB-4648-A609-898DEA50E63B", 488, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "CAUCHO", "2015", "AÑO", "660", "367", "844.1", "2.3" ]
+, [ 489, "27A6399F-5055-4D99-9ACC-218C93DB0AC0", 489, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "MAIZ TECNIFICADO ", "2015", "A", "360", "360", "2160.0", "6" ]
+, [ 490, "52FE1F0B-37D9-4DEB-B3F7-2FE0C44F61CA", 490, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "MAIZ TECNIFICADO ", "2015", "B", "70", "70", "385.0", "5.5" ]
+, [ 491, "280572A5-56CD-4AF6-986E-659ACE9000B5", 491, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "MAIZ TRADICIONAL ", "2015", "A", "380", "380", "646.0", "1.7" ]
+, [ 492, "41FC140E-1E62-4A62-8A4B-78469C13CB01", 492, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "MAIZ TRADICIONAL ", "2015", "B", "350", "350", "525.0", "1.5" ]
+, [ 493, "4B2762FA-C6AE-43DA-AE3B-B75BE7877AE4", 493, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "PALMA DE ACEITE", "2015", "AÑO", "6500", "4000", "120000.0", "30" ]
+, [ 494, "38B02702-14FF-4A8F-9297-2035CAC13FCC", 494, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "PLATANO", "2015", "AÑO", "400", "380", "5700.0", "15" ]
+, [ 495, "D02C7BD5-81ED-41A7-80F6-145DF57B562F", 495, 1504238762, "983097", 1504238762, "983097", null, "META", "MAPIRIPAN", "YUCA", "2015", "AÑO", "330", "330", "4620.0", "14" ]
+, [ 496, "468E2E40-8874-4C75-8702-05136C717603", 496, 1504238762, "983097", 1504238762, "983097", null, "META", "LA MACARENA", "CAUCHO", "2015", "AÑO", "264", "50", "75.0", "1.5" ]
+, [ 497, "5487151A-D87D-4676-A5FA-D75D939229FF", 497, 1504238762, "983097", 1504238762, "983097", null, "META", "LA MACARENA", "PLATANO", "2015", "AÑO", "370", "370", "6660.0", "18" ]
+, [ 498, "FECF9DA7-88A4-4987-91FD-66A26A106F0A", 498, 1504238762, "983097", 1504238762, "983097", null, "META", "LA MACARENA", "MAIZ FORRAJERO", "2015", "A", "100", "100", "2000.0", "20" ]
+, [ 499, "6396032B-017B-4C77-9512-7C88395B4381", 499, 1504238762, "983097", 1504238762, "983097", null, "META", "LA MACARENA", "MAIZ TRADICIONAL ", "2015", "A", "400", "400", "720.0", "1.8" ]
+, [ 500, "6F225077-D76C-4D00-A0A3-E39EF6844F1E", 500, 1504238762, "983097", 1504238762, "983097", null, "META", "LA MACARENA", "MAIZ FORRAJERO ", "2015", "B", "150", "150", "3000.0", "20" ]
+, [ 501, "261AC1E6-7900-4B0E-B06F-71BA3A135DC1", 501, 1504238762, "983097", 1504238762, "983097", null, "META", "LA MACARENA", "MAIZ TRADICIONAL ", "2015", "B", "550", "550", "990.0", "1.8" ]
+, [ 502, "EDB21293-141F-4B32-8C57-4322502FC351", 502, 1504238775, "983097", 1504238775, "983097", null, "META", "LA MACARENA", "YUCA", "2015", "AÑO", "380", "380", "7600.0", "20" ]
+, [ 503, "21CD22DB-837F-424C-B0D7-620DBA9C6341", 503, 1504238775, "983097", 1504238775, "983097", null, "META", "LA MACARENA", "ARROZ SECANO MANUAL", "2015", "A", "20", "20", "40.0", "2" ]
+, [ 504, "C2B44E40-D671-46C8-BD90-E54AC43D0661", 504, 1504238775, "983097", 1504238775, "983097", null, "META", "LA MACARENA", "CACAO", "2015", "AÑO", "60", "52", "52.0", "1" ]
+, [ 505, "0FF7FB64-791A-4CDD-BBAB-77C77D2C778E", 505, 1504238775, "983097", 1504238775, "983097", null, "META", "LA MACARENA", "CAÑAPANELERA", "2015", "AÑO", "180", "180", "450.0", "2.5" ]
+, [ 506, "8B357C7C-A544-47F6-8D44-5CFFD84FF047", 506, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "ARROZ RIEGO", "2015", "A", "300.00", "300.00", "1500.0", "5.00" ]
+, [ 507, "C73D46EA-E2C7-4B48-97C2-0120AEF7A566", 507, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "ARROZ RIEGO", "2015", "B", "2200.00", "2200.00", "11000.0", "5.00" ]
+, [ 508, "93382D3B-3CD8-42BC-AF70-BFAC739F958A", 508, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "ARROZ SECANO MECANIZADO", "2015", "A", "420.00", "420.00", "2100.0", "5.00" ]
+, [ 509, "8F591EC2-573B-4D45-9B7D-D0F5706EE4EC", 509, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "CACAO", "2015", "AÑO", "15.00", "15.00", "15.0", "1.00" ]
+, [ 510, "B3B81290-D183-440E-BE0F-0E9808D3A488", 510, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "CAÑA PANELERA", "2015", "AÑO", "20.00", "12.00", "240.0", "20.00" ]
+, [ 511, "4E16E48C-CC07-4F3E-8FB4-70F3EDBD72A2", 511, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "CAUCHO", "2015", "AÑO", "140.00", "40.00", "80.0", "2.00" ]
+, [ 512, "B269475C-81FA-460E-8D2C-2210EB781231", 512, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "CITRICOS", "2015", "AÑO", "178.00", "175.00", "3850.0", "22.00" ]
+, [ 513, "CB417F7E-24E4-41B2-97D9-A7013DA6E3B8", 513, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "PALMA DE ACEITE", "2015", "AÑO", "45000.00", "32000.00", "960000.0", "30.00" ]
+, [ 514, "5AD9035F-845F-44D7-B389-640CF21D85FE", 514, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "PAPAYA", "2015", "AÑO", "53.00", "13.00", "416.0", "32.00" ]
+, [ 515, "54179B52-765C-4B51-A1B6-CE0C811297E0", 515, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "PLATANO", "2015", "AÑO", "140.00", "135.00", "1890.0", "14.00" ]
+, [ 516, "A581D54C-F2F1-4815-9CAB-D33ACFD3511C", 516, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "YUCA", "2015", "AÑO", "60.00", "60.00", "1200.0", "20.00" ]
+, [ 517, "6C3739F1-05B8-4FAA-AC5C-3FD79F6D6EE5", 517, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "PIÑA", "2015", "AÑO", "21.00", "0.00", "0.0", "0" ]
+, [ 518, "D23A5D84-B441-4C82-B3E9-5B45A7175E49", 518, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "MARACUYA", "2015", "AÑO", "3", "0", "0.0", "0" ]
+, [ 519, "6807E1CE-D067-4500-8E77-0C99601BD56E", 519, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "MAIZ AMARILLO MANUAL", "2015", "A", "5", "5", "9.0", "1.8" ]
+, [ 520, "18F66850-55AC-4A64-B2ED-547DF296E534", 520, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "MAIZ AMARILLO TECNIFICADO", "2015", "B", "90", "0", "0.0", "0" ]
+, [ 521, "A1FACDD4-DAA4-4808-BEAD-FEB033701C64", 521, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "MAIZ AMARILLO MANUAL", "2015", "B", "5", "5", "9.0", "1.8" ]
+, [ 522, "846677C9-BF76-4AD3-B3CF-E42A259C8D6E", 522, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "PATILLA", "2015", "A", "40", "40", "1200.0", "30" ]
+, [ 523, "E4346251-AE07-44D7-8B8E-4B8BF9BBDA22", 523, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "PATILLA", "2015", "B", "20", "20", "600.0", "30" ]
+, [ 524, "8D3BCD80-818E-4F12-8CE4-636179A10D57", 524, 1504238775, "983097", 1504238775, "983097", null, "META", "SAN CALOS DE GUAROA", "AUYAMA", "2015", "B", "10", "0", "0.0", "0" ]
+ ]
+}
