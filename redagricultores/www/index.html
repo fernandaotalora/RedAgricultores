@@ -179,6 +179,40 @@
       </div>
     </header>
 
+ <!-- About Section -->
+    <section class="success" id="inicio">
+      <div class="container">
+        <h4 class="text-center">Iniciar sesión</h4>        
+        <div class="row">
+          <div class="col-lg-12">
+            <form name="sentMessage" id="contactForm" novalidate>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Usuario</label>
+                  <input class="form-control" id="usuario" type="text" placeholder="Usuario" required data-validation-required-message="Ingrese su usuario.">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="control-group">
+                <div class="form-group floating-label-form-group controls">
+                  <label>Contraseña</label>
+                  <input class="form-control" id="password" type="password" placeholder="Contraseña" required data-validation-required-message="Ingrese su contraseña">
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>          
+              <br>
+              <div id="success"></div>
+              <div class="form-group text-center">
+                <button type="submit" class="btn btn-warning btn-lg" id="sendMessageButton">Enviar</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            
+          </div>         
+        </div>
+      </div>
+    </section>
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
       <div class="container">
@@ -247,123 +281,83 @@
           </div>-->
         </div>
       </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-      <div class="container">
-        <h4 class="text-center">Iniciar Sesion</h4>        
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Usuario</label>
-                  <input class="form-control" id="name" type="text" placeholder="Usuario" required data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Contraseña</label>
-                  <input class="form-control" id="password" type="password" placeholder="Contraseña" required data-validation-required-message="Ingresar Contraseña">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>          
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-warning btn-lg" id="sendMessageButton">Enviar</button>
-              </div>
-            </form>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            
-          </div>         
-        </div>
-      </div>
-    </section>
+    </section>   
 
     <!-- modal para registro de nuevo usuario -->
     <div class="portfolio-modal modal fade" id="registrar" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
-            x
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
           <div class="container">
-            <h4 class="text-center">Registrar nuevo usuario</h4>        
+            <h4 class="text-center"> <font color="green"> Registrar nuevo usuario</font></h4>        
             <div class="row">
-            <div class="col-lg-5">           
+            <div class="col-lg-12">           
             <form name="sentMessage" id="contactForm" novalidate>
               <div class="control-group">
                
                   <label>Nombres</label>
-                  <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre" required data-validation-required-message="El campo nombre es requerido.">
+                  <input class="form-control" id="nombre" type="text" placeholder="Ingrese su nombre" required data-validation-required-message="El campo nombre es requerido.">
                   <p class="help-block text-danger"></p>
                
                   <label>Apellido</label>
                   <input class="form-control" id="apellido" type="text" placeholder="Ingrese su apellido" required data-validation-required-message="El campo apellido es requerido.">
                   <p cslass="help-block text-danger"></p>
-                </div>
-          </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Correo Electronico</label>
-                  <input class="form-control" id="email" type="email" placeholder="Correo Electronico" required data-validation-required-message="Please enter your email address.">
+               
+                   <label>Usuario</label>
+                  <input class="form-control" id="usuario" type="text" placeholder="Ingrese su usuario" required data-validation-required-message="El campo usuario es requerido.">
                   <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
+               
+                  <label>Contraseña</label>
+                  <input class="form-control" id="contraseña" type="password" placeholder="Ingrese su contraseña" required data-validation-required-message="El campo contraseña es requerido.">
+                  <p cslass="help-block text-danger"></p>
+                
+                  <label>Correo electrónico</label>
+                  <input class="form-control" id="correo" type="email" placeholder="nombre@psgins.com" required data-validation-required-message="El campo correo es  requerido.">
+                  <p class="help-block text-danger"></p>
+                
                   <label>Celular</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Celular" required data-validation-required-message="Please enter your phone number.">
+                  <input class="form-control" id="celu" type="tel" placeholder="Ingrese su celular" required data-validation-required-message="El campo celular es requerido.">
                   <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
+             
                   <label>Departamento</label>
-                  <select class="form-group">
+                  <select class="form-control">
                     <option>Casanare</option>
                     <option>Meta</option>
                   </select>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
+                 
+               
                   <label>Municipio</label>
-                  <select class="form-group">
+                  <select class="form-control">
                     <option>Villavicencio</option>
                     <option>Acacias</option>
                   </select>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Direccion</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Direccion" required data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Ocupacion</label>
-                  <select class="form-group">
+               
+             
+                  <label>Dirección</label>
+                  <input class="form-control" id="direccion" type="text" placeholder="Ingrese su direccion">
+                           
+            
+                  <label>Ocupación</label>
+                  <select class="form-control">form-control
                     <option>Cultivar Papa</option>
                     <option>Cultivar Maiz</option>
                   </select>
+                 
+               
+                  <label>Tipo de registro</label>
+                  <select class="form-control">form-control
+                    <option>Proveedor</option>
+                    <option>Agricultor</option>
+                  </select>
                   <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Cuentanos de Ti</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Cuentanos de Ti" required data-validation-required-message="Please enter a message."></textarea>
+
+                  <textarea class="form-control" id="message" rows="5" placeholder="Cuentanos de ti" "></textarea>
                   <p class="help-block text-danger"></p>
-                </div>
+                
               </div>
               <br>
               <div id="success"></div>
@@ -378,52 +372,12 @@
         </div>
       </div>
 
-
-    <!-- Footer -->
+   <!-- Footer -->
     <footer class="text-center">
       <div class="footer-above">
         <div class="container">
           <div class="row">
-            <!--<div class="footer-col col-md-4">
-              <h3>Location</h3>
-              <p>3481 Melrose Place
-                <br>Beverly Hills, CA 90210</p>
-            </div>
-            <div class="footer-col col-md-4">
-              <h3>Around the Web</h3>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-google-plus"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-dribbble"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-col col-md-4">
-              <h3>About Freelancer</h3>
-              <p>Freelance is a free to use, open source Bootstrap theme created by
-                <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-            </div>-->
+           
           </div>
         </div>
       </div>
@@ -431,7 +385,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              Copyright &copy; Your Website 2017
+              Copyright &copy; RedAgricultores grupo FYJ 2017
             </div>
           </div>
         </div>
