@@ -19,15 +19,25 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
+    <link href="css/freelancer.min.css" rel="stylesheet">  
     <!-- JQuery -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <!-- Graficar-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
 
   </head>
   <script type="text/javascript">
     $(document).on('ready',function (){
 
+        /**
+        Definicion de variables para incluir los datos que se van a graficar
+        **/
+        var etiquetas = [];
+        var area  = [];
+        var municipio = "";
         /**
         Llenar combos con datos de OpenData**/
 
@@ -38,7 +48,7 @@
         });      
 
         $("#municipios").change(function() {
-            var municipio = $("#municipios option:selected").val();
+            municipio = $("#municipios option:selected").val();
             $('option', '#cultivo').remove();
             $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=cultivo&municipio="+municipio+"&$group=cultivo", function(datos) {            
                 $.each(datos, function(id,municipio) {                
@@ -47,6 +57,62 @@
                 $("#cultivo").append('<option name="Todos">Todos</option>');
             });            
         });
+
+        $("#cultivo").change(function() {
+            var opcion = $("#cultivo option:selected").val();            
+            if(opcion=="Todos"){
+                $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=cultivo,area_sembrada_ha&municipio="+municipio+"&$group=cultivo,area_sembrada_ha", function(datos) {            
+                    $.each(datos, function(id) {                
+                        etiquetas[id] = datos[id]['cultivo'];
+                        area[id]  = datos[id]['area_sembrada_ha'] ;
+                    });          
+                });      
+                graficarMunicipios();    
+            }else{
+                graficarCultivos();
+            }            
+        });
+
+        
+        //Cortar el nombre de las etiquetas para los cultivos..revisarlo
+        function graficarMunicipios(){
+          var data = {
+            labels: etiquetas,
+            datasets: [{
+              label: "Cultivos",
+              backgroundColor: "rgba(255,99,132,0.2)",
+              borderColor: "rgba(255,99,132,1)",
+              borderWidth: 2,
+              hoverBackgroundColor: "rgba(255,99,132,0.4)",
+              hoverBorderColor: "rgba(255,99,132,1)",
+              data: area,
+            }]
+          };
+
+          var options = {
+            maintainAspectRatio: false,
+            scales: {
+              yAxes: [{
+                stacked: true,
+                gridLines: {
+                  display: true,
+                  color: "rgba(255,99,132,0.2)"
+                }
+              }],
+              xAxes: [{
+                gridLines: {
+                  display: false
+                }
+              }]
+            }
+          };
+
+          Chart.Bar('chart', {
+            options: options,
+            data: data
+          });
+        }
+        
 
 
     });
@@ -411,6 +477,10 @@
                   <select id="cultivo" class="form-group">                   
                   </select>
 
+                  <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                      <canvas id="chart"></canvas>
+                  </div>
+
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Cerrar</button>
@@ -650,7 +720,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
-
+      
   </body>
 
 </html>
