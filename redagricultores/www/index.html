@@ -21,15 +21,19 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">  
     <!-- JQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
     <!-- Graficar-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
 
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
   </head>
   <script type="text/javascript">
+    app.initialize();
     $(document).on('ready',function (){
 
         /**
@@ -38,14 +42,16 @@
         var etiquetas = [];
         var area  = [];
         var municipio = "";
+        var cantidad = [];
+        
         /**
         Llenar combos con datos de OpenData**/
 
-        $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=municipio&$group=municipio", function(datos) {            
+        $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=municipio&$group=municipio&$order=municipio", function(datos) {            
             $.each(datos, function(id,municipio) {                
                 $("#municipios").append('<option name="' + datos[id]['municipio'] + '">' + datos[id]['municipio'] + '</option>');
             });          
-        });      
+        });                   
 
         $("#municipios").change(function() {
             municipio = $("#municipios option:selected").val();
@@ -55,62 +61,141 @@
                     $("#cultivo").append('<option name="' + datos[id]['cultivo'] + '">' + datos[id]['cultivo'] + '</option>');
                 });          
                 $("#cultivo").append('<option name="Todos">Todos</option>');
-            });            
-        });
+            }); 
 
-        $("#cultivo").change(function() {
-            var opcion = $("#cultivo option:selected").val();            
-            if(opcion=="Todos"){
-                $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=cultivo,area_sembrada_ha&municipio="+municipio+"&$group=cultivo,area_sembrada_ha", function(datos) {            
+            //Traer datos de municipio
+
+            $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=cultivo,sum(area_sembrada_ha)&municipio="+municipio+"&$group=cultivo", function(datos) {            
                     $.each(datos, function(id) {                
                         etiquetas[id] = datos[id]['cultivo'];
-                        area[id]  = datos[id]['area_sembrada_ha'] ;
+                        area[id]      = datos[id]['sum_area_sembrada_ha'];
                     });          
-                });      
+            });      
+             
+
+        });
+  
+       
+        $("#cultivo").change(function() {
+            var opcion = $("#cultivo option:selected").val(); 
+
+            $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=area_sembrada_ha,area_cosechada_ha,producci_n_t,rendimiento_t_ha&municipio="+municipio+"&cultivo="+opcion+"", function(datos) {            
+                    $.each(datos, function(id) {                
+                        cantidad[0] = datos[id]['area_sembrada_ha'] ;
+                        cantidad[1] = datos[id]['area_cosechada_ha'] ;
+                        cantidad[2] = datos[id]['producci_n_t'] ;
+                        cantidad[3] = datos[id]['rendimiento_t_ha'] ;
+                    });          
+            });   
+
+            if(opcion=="Todos"){                
                 graficarMunicipios();    
-            }else{
+            }else{                
                 graficarCultivos();
             }            
         });
 
-        
-        //Cortar el nombre de las etiquetas para los cultivos..revisarlo
+        /**
+        Funciones para realizar las graficas **/        
+        function graficarCultivos(){
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: ["Area Sembrada (ha)", "Area Cosechada (ha)", "Producción(t)", "Rendimiento(t/ha)"],
+                    datasets: [{
+                        label: 'Producción',                        
+                        data: cantidad,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true
+                }
+            });
+        }
+
         function graficarMunicipios(){
-          var data = {
-            labels: etiquetas,
-            datasets: [{
-              label: "Cultivos",
-              backgroundColor: "rgba(255,99,132,0.2)",
-              borderColor: "rgba(255,99,132,1)",
-              borderWidth: 2,
-              hoverBackgroundColor: "rgba(255,99,132,0.4)",
-              hoverBorderColor: "rgba(255,99,132,1)",
-              data: area,
-            }]
-          };
-
-          var options = {
-            maintainAspectRatio: false,
-            scales: {
-              yAxes: [{
-                stacked: true,
-                gridLines: {
-                  display: true,
-                  color: "rgba(255,99,132,0.2)"
+            var ctx = document.getElementById("myChart");
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {                    
+                    labels: etiquetas,
+                    datasets: [{
+                        label: 'Cultivos',                        
+                        data: area,
+                        backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)',
+                            'rgba(139, 195, 74 ,0.2)',
+                            'rgba(233, 30, 99 ,0.2)',
+                            'rgba(41,121,255 ,0.2)',
+                            'rgba(255,234,0 ,0.2)',
+                            'rgba(213,0,249 ,0.2)',
+                            'rgba(255,193,7 ,0.2)',
+                            'rgba(0,229,255 ,0.2)',
+                            'rgba(211,47,47 ,0.2)',
+                            'rgba(56,142,60 ,0.2)',
+                            'rgba(255,112,67 ,0.2)',
+                            'rgba(0,230,118 ,0.2)',
+                            'rgba(161,136,127 ,0.2)',
+                            'rgba(213,0,249 ,0.2)',
+                            'rgba(48,79,254 ,0.2)',
+                            'rgba(255,193,7 ,0.2)',
+                            'rgba(129,199,132 ,0.2)',
+                            'rgba(236,64,122 ,0.2)',
+                            'rgba(48,79,254 ,0.2)'
+                        ],
+                        borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)',
+                            'rgba(139, 195, 74 ,1)',
+                            'rgba(233, 30, 99 ,1)',
+                            'rgba(41,121,255 ,1)',
+                            'rgba(255,234,0 ,1)',
+                            'rgba(213,0,249 ,1)',
+                            'rgba(255,193,7 ,1)',
+                            'rgba(0,229,255 ,1)',
+                            'rgba(211,47,47 ,1)',
+                            'rgba(56,142,60 ,1)',
+                            'rgba(255,112,67 ,1)',
+                            'rgba(0,230,118 ,1)',
+                            'rgba(161,136,127 ,1)',
+                            'rgba(213,0,249 ,1)',
+                            'rgba(48,79,254 ,1)',
+                            'rgba(255,193,7 ,1)',
+                            'rgba(129,199,132 ,1)',
+                            'rgba(236,64,122 ,1)',
+                            'rgba(48,79,254 ,1)'
+                        ],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
+                    }
                 }
-              }],
-              xAxes: [{
-                gridLines: {
-                  display: false
-                }
-              }]
-            }
-          };
+            });    
 
-          Chart.Bar('chart', {
-            options: options,
-            data: data
-          });
         }
         
 
@@ -224,27 +309,7 @@
               </div>
               <center><img class="img-fluid" src="img/portfolio/if_cultivos.png" alt=""></center>
             </a>
-          </div>
-          <!--<div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
-            </a>
-          </div>-->
+          </div>          
         </div>
       </div>
     </section>
@@ -383,47 +448,7 @@
     <footer class="text-center">
       <div class="footer-above">
         <div class="container">
-          <div class="row">
-            <!--<div class="footer-col col-md-4">
-              <h3>Location</h3>
-              <p>3481 Melrose Place
-                <br>Beverly Hills, CA 90210</p>
-            </div>
-            <div class="footer-col col-md-4">
-              <h3>Around the Web</h3>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-google-plus"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-linkedin"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="#">
-                    <i class="fa fa-fw fa-dribbble"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-col col-md-4">
-              <h3>About Freelancer</h3>
-              <p>Freelance is a free to use, open source Bootstrap theme created by
-                <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-            </div>-->
+          <div class="row">            
           </div>
         </div>
       </div>
@@ -477,10 +502,12 @@
                   <select id="cultivo" class="form-group">                   
                   </select>
 
-                  <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                  <!--<div class="chart-container" style="position: relative; height:40vh; width:80vw">
                       <canvas id="chart"></canvas>
-                  </div>
+                  </div>-->
 
+                  <canvas id="myChart" width="400" height="400"></canvas>
+                  <br>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
                     Cerrar</button>
