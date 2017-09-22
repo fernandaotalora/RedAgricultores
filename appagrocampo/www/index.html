@@ -29,6 +29,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 
 <body id="page-top">
@@ -207,7 +208,29 @@
 
             }
             
+            //Peticiones Ajax para comunicarse con PHP
 
+          $("#sendMessageForm").click(function(){   
+
+              var datos = dataFormToJsonTwo('Datos','Datosusuario');               
+            
+              $.ajax({  async:  false,
+                        type:   "POST",
+                        url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
+                        data:   {   Peticion:   "registrarUsuario",
+                                    Datos:      JSON.stringify(datos)
+                    },
+                    success: function(data){                          
+                       if(data==1){
+                          alert("Registrado Correctamente");
+                       }else{
+                          alert("Fallo Registro Datos");
+                       }                             
+                    }
+              }); 
+
+
+          }); 
 
         });
     </script>
@@ -355,73 +378,107 @@
     </section>
 
     <!-- modal para registro de nuevo usuario -->
-    <div class="portfolio-modal modal fade" id="registrar" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="portfolio-modal modal fade" id="registrar" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
-            x
+           <div class="lr">
+              <div class="rl"></div>
+            </div>
           </div>
           <div class="container">
-            <h4 class="text-center">Registrar nuevo usuario</h4>        
-            <div class="row">
+          <li class="list-inline-item">
+            <a class="img-fluid" href="#">
+              <h5>Registrar nuevo usuario</h5>
+            </a>                  
+          </li> 
+         
+          <div class="row">
                 <div class="col-lg-5">           
                   <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group">
                      
                         <label>Nombres</label>
-                        <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre" required data-validation-required-message="El campo nombre es requerido.">
+                        <input class="form-control Datosusuario" id="nombre" type="text" placeholder="Ingrese su nombre" required data-validation-required-message="El campo nombre es requerido.">
                         <p class="help-block text-danger"></p>
                      
                         <label>Apellido</label>
-                        <input class="form-control" id="apellido" type="text" placeholder="Ingrese su apellido" required data-validation-required-message="El campo apellido es requerido.">
+                        <input class="form-control Datosusuario" id="apellido" type="text" placeholder="Ingrese su apellido" required data-validation-required-message="El campo apellido es requerido.">
+                        <p cslass="help-block text-danger"></p>
+                  
+                        <label>Número de cedula</label>
+                        <input class="form-control Datosusuario" id="documento" maxlength="15" type="number" placeholder="Ingrese su número de cedula" required data-validation-required-message="El campo número de cedula es requerido.">
+                        <p class="help-block text-danger"></p>
+
+                        <label>Usuario</label>
+                        <input class="form-control Datosusuario" id="usuario" type="text"  placeholder="Ingrese su usuario" required data-validation-required-message="El campo usuario es requerido.">
+                        <p class="help-block text-danger"></p>
+                     
+                        <label>Contraseña</label>
+                        <input class="form-control Datosusuario" id="contraseña" type="password" placeholder="Ingrese su contraseña" required data-validation-required-message="El campo contraseña es requerido.">
                         <p cslass="help-block text-danger"></p>
 
-                        
                         <label>Correo Electronico</label>
-                        <input class="form-control" id="email" type="email" placeholder="Correo Electronico" required data-validation-required-message="Please enter your email address.">
+                        <input class="form-control Datosusuario" id="email" type="email" placeholder="Ingrese su correo" required data-validation-required-message="El campo correo es requerido.">
                         <p class="help-block text-danger"></p>                
 
                         <label>Celular</label>
-                        <input class="form-control" id="phone" type="tel" placeholder="Celular" required data-validation-required-message="Please enter your phone number.">
+                        <input class="form-control Datosusuario" id="phone" type="tel" placeholder="Ingrese su celular" required data-validation-required-message="El campo celular es requerido.">
                         <p class="help-block text-danger"></p>      
 
-                        <div class="form-group">
-                            <label>Departamento</label>
-                              <select class="form-control">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                             </select>
-                        </div>
+                          <div class="form-group">
+                              <label>Departamento</label>
+                                <select class="form-control Datosusuario" id="departamento">
+                                    <option value="1">Meta</option>
+                                    <!--<option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>-->
+                               </select>
+                          </div>
 
-                        <div class="form-group">
-                            <label>Municipio</label>
-                              <select class="form-control">
-                                  <option>1</option>
-                                  <option>2</option>
-                                  <option>3</option>
-                                  <option>4</option>
-                                  <option>5</option>
-                             </select>
+                          <div class="form-group">
+                              <label>Municipio</label>
+                                <select class="form-control Datosusuario" id="municipio">
+                                    <option value="2">Villavicencio</option>
+                                    <option value="3">Acacias</option>
+                                    <option value="4">Guamal</option>
+                                    <option value="5">Puerto Lopez</option>
+                                    <option value="6">Restrepo</option>
+                               </select>
                         </div>
                         
-                        <label>Direccion</label>
-                        <input class="form-control" id="phone" type="tel" placeholder="Celular" required data-validation-required-message="Please enter your phone number.">
+                        <label>Dirección</label>
+                        <input class="form-control Datosusuario" id="direccion" type="text" placeholder="Ingrese su dirección" required data-validation-required-message="El campo dirección es requerido.">
                         <p class="help-block text-danger"></p> 
                         
-                        <textarea class="form-control" id="message" rows="5" placeholder="Cuentanos de Ti" required data-validation-required-message="Please enter a message."></textarea>
+                         <div class="form-group">
+                              <label>Tipo de usuario</label>
+                                <select class="form-control Datosusuario" id="tipousuario">
+                                    <option value="1">Agricultor</option>
+                                    <option value="2">Proveedor</option>
+                                   
+                               </select>
+                          </div>
+
+                          <div class="form-group">
+                              <label>Tipo Cultivo</label>
+                                <select class="form-control Datosusuario" id="tipoCultivo">
+                                    <option value="1">Hortalizas y verduras</option>
+                                    <option value="2">Leguminosas</option>
+                                    <option value="3">Frutas</option>
+                                    <option value="4">Tuberculos</option>
+                               </select>
+                        </div>
+                        <textarea class="form-control Datosusuario" id="sobreti" rows="5" placeholder="Cuentanos de ti"></textarea>
                         <p class="help-block text-danger"></p>
 
                         <br>
                         <div id="success"></div>
                         <div class="form-group">
-                          <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Enviar</button>
+                          <button type="button" class="btn btn-success btn-lg" id="sendMessageForm">Guardar</button>
                         </div>
-
-                      </div>
-                    </div>                                      
+                      </div>                                                         
                   </form>
               </div>
             </div>
