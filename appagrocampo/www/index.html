@@ -17,8 +17,8 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">-->
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">  
@@ -223,6 +223,15 @@
 
           }); 
 
+              //Peticiones Ajax para comunicarse con PHP
+
+          $("#IniciarSesion").click(function()
+          {   
+              alert("Bienvenido");
+              document.getElementById("login").style.display = "none";
+              document.getElementById("portfolio").style.display = "block";
+          }); 
+
         });
     </script>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -240,6 +249,7 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#login">Iniciar Sesion</a>
             </li>
+             
             <li class="nav-item">             
               <a class="nav-link " href="#registrar" data-toggle="modal">Registrarse</a>
               
@@ -284,13 +294,18 @@
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio" >
+    <section id="portfolio" style="display: none" >
       <div class="container">
-        <h4 class="text-center">Novedades</h4>      
+        <h4 class="text-center">Novedades</h4>      <br>
         <div class="row">
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#datosAbiertos" data-toggle="modal">             
-              <center><img class="img-fluid img-centered" src="img/portfolio/if_datos.png" alt=""></center>
+            <a class="portfolio-link" href="#datosAbiertos" data-toggle="modal">  
+            <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>   
+              </div>          
+              <center><img class="img-fluid" src="img/portfolio/if_datos.png" alt=""></center>
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
@@ -300,8 +315,8 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <center><img class="img-fluid" src="img/portfolio/if_preguntas.png" alt=""></center>
-            </a>
+              <center><img class="img-fluid" src="img/compartir.png" alt="" height="100" width="100"></center>
+            </a>  
           </div>
           
            <div class="col-sm-4 portfolio-item">
@@ -311,7 +326,7 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <center><img class="img-fluid" src="img/portfolio/if_mail.png" alt=""></center>
+             <center><img class="img-fluid img-centered" src="img/proveedor.png" alt="" height="100" width="100"></center>
             </a>
           </div>
           
@@ -341,7 +356,7 @@
               <br>
               <div id="success"></div>
               <div class="text-center">
-                <button type="submit" class="btn btn-warning btn-lg" id="sentMessage">Entrar</button>
+                <button type="button" class="btn btn-warning btn-lg" id="IniciarSesion">Entrar</button>
               </div>
             </form>
           </div>
@@ -538,8 +553,9 @@
                   <a class="img-fluid" href="#">
                      <h5>Publica información de tu negocio</h5>
                   </a>                  
-                  </li>                                 
-                   <img class="img-fluid img-centered" src="img/portfolio/if_mensaje.png" alt="">
+                  </li>  
+                  <br>                               
+                   <img class="img-fluid img-centered" src="img/proveedor.png" alt="" width="50" height="50"> 
                   <form name="sentMessage" id="contactForm" novalidate>
                     <textarea class="form-control" id="obsProveedor" rows="5" required data-validation-required-message="El campo  es requerido." placeholder="Comparte promociones o información de tu negocio en la red de agricultores Colombianos"></textarea>
                     <p class="help-block text-danger"></p>                    
@@ -571,8 +587,9 @@
                   <a class="img-fluid" href="#">
                      <h5>Comparte información</h5>
                   </a>                  
-                  </li>                                 
-                  <img class="img-fluid img-centered" src="img/portfolio/if_agricultor.png" alt="">
+                  </li>   
+                  <br>                              
+                  <img class="img-fluid img-centered" src="img/compartir.png" alt="" height="50" width="50">
                   <form name="sentMessage" id="contactForm" novalidate>
                     <textarea class="form-control" id="obsAgricultor" rows="5" required data-validation-required-message="El campo  es requerido." placeholder="Comparte tu conocimiento o busca consejo con otros agricultores"></textarea>
                     <p class="help-block text-danger"></p>                    
