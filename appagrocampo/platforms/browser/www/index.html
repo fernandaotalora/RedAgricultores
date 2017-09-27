@@ -223,6 +223,7 @@
                     success: function(data){                          
                        if(data==1){
                           alert("Registrado Correctamente");
+                          $('.Datosusuario').val("");
                        }else{
                           alert("Fallo Registro Datos");
                        }                             
@@ -398,31 +399,31 @@
                   <form name="sentMessage" id="contactForm" novalidate>
                     <div class="control-group">
                      
-                        <label>Nombres</label>
+                        <!--<label>Nombres</label>-->
                         <input class="form-control Datosusuario" id="nombre" type="text" placeholder="Ingrese su nombre" required data-validation-required-message="El campo nombre es requerido.">
                         <p class="help-block text-danger"></p>
                      
-                        <label>Apellido</label>
+                        <!--<label>Apellido</label>-->
                         <input class="form-control Datosusuario" id="apellido" type="text" placeholder="Ingrese su apellido" required data-validation-required-message="El campo apellido es requerido.">
                         <p cslass="help-block text-danger"></p>
                   
-                        <label>Número de cedula</label>
+                        <!--<label>Número de cedula</label>-->
                         <input class="form-control Datosusuario" id="documento" maxlength="15" type="number" placeholder="Ingrese su número de cedula" required data-validation-required-message="El campo número de cedula es requerido.">
                         <p class="help-block text-danger"></p>
 
-                        <label>Usuario</label>
+                        <!--<label>Usuario</label>-->
                         <input class="form-control Datosusuario" id="usuario" type="text"  placeholder="Ingrese su usuario" required data-validation-required-message="El campo usuario es requerido.">
                         <p class="help-block text-danger"></p>
                      
-                        <label>Contraseña</label>
+                        <!--<label>Contraseña</label>-->
                         <input class="form-control Datosusuario" id="contraseña" type="password" placeholder="Ingrese su contraseña" required data-validation-required-message="El campo contraseña es requerido.">
                         <p cslass="help-block text-danger"></p>
 
-                        <label>Correo Electronico</label>
+                        <!--<label>Correo Electronico</label>-->
                         <input class="form-control Datosusuario" id="email" type="email" placeholder="Ingrese su correo" required data-validation-required-message="El campo correo es requerido.">
                         <p class="help-block text-danger"></p>                
 
-                        <label>Celular</label>
+                        <!--<label>Celular</label>-->
                         <input class="form-control Datosusuario" id="phone" type="tel" placeholder="Ingrese su celular" required data-validation-required-message="El campo celular es requerido.">
                         <p class="help-block text-danger"></p>      
 
@@ -448,7 +449,7 @@
                                </select>
                         </div>
                         
-                        <label>Dirección</label>
+                        <!--<label>Dirección</label>-->
                         <input class="form-control Datosusuario" id="direccion" type="text" placeholder="Ingrese su dirección" required data-validation-required-message="El campo dirección es requerido.">
                         <p class="help-block text-danger"></p> 
                         
