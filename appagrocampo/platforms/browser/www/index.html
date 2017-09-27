@@ -17,8 +17,8 @@
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">-->
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">  
@@ -33,13 +33,6 @@
 </head>
 
 <body id="page-top">
-    <!--<div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>-->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
@@ -205,9 +198,8 @@
                         }
                     }
                 });    
-
-            }
-            
+            }          
+     
             //Peticiones Ajax para comunicarse con PHP
 
           $("#sendMessageForm").click(function(){   
@@ -230,7 +222,15 @@
                     }
               }); 
 
+          }); 
 
+              //Peticiones Ajax para comunicarse con PHP
+
+          $("#IniciarSesion").click(function()
+          {   
+              alert("Bienvenido");
+              document.getElementById("login").style.display = "none";
+              document.getElementById("portfolio").style.display = "block";
           }); 
 
         });
@@ -244,12 +244,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Novedades</a>
-            </li>
+            </li>-->
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Iniciar Sesion</a>
+              <a class="nav-link js-scroll-trigger" href="#login">Iniciar Sesion</a>
             </li>
+             
             <li class="nav-item">             
               <a class="nav-link " href="#registrar" data-toggle="modal">Registrarse</a>
               
@@ -286,95 +287,81 @@
                     <img class="img-fluid" src="img/agricultura/if_plant4.png" alt="">
                   </a>
                 </li>
-                <label class="skills">Uniendo el campo y sus agricultores</label>             
+                        
             </ul>
-          <!--<label class="skills">Uniendo el campo y sus agricultores</label>-->
+          <label class="skills">Uniendo el campo y sus agricultores</label>
         </div>
       </div>
     </header>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="portfolio" style="display: none" >
       <div class="container">
-        <h4 class="text-center">Novedades</h4>
-        <!--<hr class="star-primary">-->
+        <h4 class="text-center">Novedades</h4>      <br>
         <div class="row">
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
+            <a class="portfolio-link" href="#datosAbiertos" data-toggle="modal">  
+            <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <center><img class="img-fluid img-centered" src="img/portfolio/if_datos.png" alt=""></center>
+                </div>   
+              </div>          
+              <center><img class="img-fluid" src="img/portfolio/if_datos.png" alt=""></center>
             </a>
           </div>
           <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+            <a class="portfolio-link" href="#compartir" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <center><img class="img-fluid" src="img/portfolio/if_preguntas.png" alt=""></center>
+              <center><img class="img-fluid" src="img/compartir.png" alt="" height="100" width="100"></center>
+            </a>  
+          </div>
+          
+           <div class="col-sm-4 portfolio-item">
+            <a class="portfolio-link" href="#infoProvedor" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+             <center><img class="img-fluid img-centered" src="img/proveedor.png" alt="" height="100" width="100"></center>
             </a>
           </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <center><img class="img-fluid" src="img/portfolio/if_mail.png" alt=""></center>
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <center><img class="img-fluid" src="img/portfolio/if_cultivos.png" alt=""></center>
-            </a>
+          
+
           </div>          
         </div>
       </div>
     </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-      <div class="container">
-        <h4 class="text-center">Iniciar Sesion</h4>        
+
+    <!-- login Section -->
+    <section class="success" id="login">
+    <div class="container">
+        <h4 class="text-center">Iniciar sesión</h4>        
         <div class="row">
-          <div class="col-lg-4 ml-auto">
+        <div class="col-sm-4 ">
             <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
+              <div class="control-group"> 
                   <label>Usuario</label>
-                  <input class="form-control" id="name" type="text" placeholder="Usuario" required data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
+                  <input class="form-control" id="usuarioLogin" type="text" placeholder="Ingrese su usuario" required data-validation-required-message="El campo usuario es requerido.">
+                  <p class="help-block text-danger"></p>               
+               
                   <label>Contraseña</label>
-                  <input class="form-control" id="password" type="password" placeholder="Contraseña" required data-validation-required-message="Ingresar Contraseña">
+                  <input class="form-control" id="contraseñaLogin" type="password" placeholder="Ingrese su contraseña" required data-validation-required-message="El campo contraseña es requerido">
                   <p class="help-block text-danger"></p>
-                </div>
-              </div>          
+              </div>
               <br>
               <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-warning btn-lg" id="sendMessageButton">Enviar</button>
+              <div class="text-center">
+                <button type="button" class="btn btn-warning btn-lg" id="IniciarSesion">Entrar</button>
               </div>
             </form>
           </div>
-          <div class="col-lg-4 mr-auto">
-            
-          </div>         
-        </div>
+       </div>   
       </div>
     </section>
 
@@ -418,8 +405,13 @@
                         <!--<label>Contraseña</label>-->
                         <input class="form-control Datosusuario" id="contraseña" type="password" placeholder="Ingrese su contraseña" required data-validation-required-message="El campo contraseña es requerido.">
                         <p cslass="help-block text-danger"></p>
+<<<<<<< HEAD
 
                         <!--<label>Correo Electronico</label>-->
+=======
+                       
+                        <label>Correo electrónico</label>
+>>>>>>> c5932eefeaf26c2da2aaaded5315e6f72a9daa97
                         <input class="form-control Datosusuario" id="email" type="email" placeholder="Ingrese su correo" required data-validation-required-message="El campo correo es requerido.">
                         <p class="help-block text-danger"></p>                
 
@@ -488,7 +480,6 @@
       </div>
     </div>
 
-
     <!-- Footer -->
     <footer class="text-center">
       <div class="footer-above">
@@ -501,22 +492,15 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              Copyright &copy; Your Website 2017
+              Copyright &copy; RedAgricultores Grupo FYJ 2017
             </div>
           </div>
         </div>
       </div>
     </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top d-lg-none">
-      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
-    </div>
-
+   
     <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="datosAbiertos" tabindex="-1"  aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -547,10 +531,6 @@
                   <select id="cultivo" class="form-group">                   
                   </select>
 
-                  <!--<div class="chart-container" style="position: relative; height:40vh; width:80vw">
-                      <canvas id="chart"></canvas>
-                  </div>-->
-
                   <canvas id="myChart" width="400" height="400"></canvas>
                   <br>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
@@ -563,7 +543,8 @@
         </div>
       </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <div class="portfolio-modal modal fade" id="infoProvedor" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -573,39 +554,31 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h4>Preguntar a otros Agricultores</h4>                  
-                  <img class="img-fluid img-centered" src="img/portfolio/if_agricultor.png" alt="">
-                  <p>Comunicacion con agricultores del mismo tipo de cultivo</p>
-                  <ul class="list-inline item-details">
-                    <li>Cultivo:
-                      <strong>
-                        <a href="http://startbootstrap.com">Aguacate</a>
-                      </strong>
-                    </li>
-                    <li>Departamento:
-                      <strong>
-                        <a href="http://startbootstrap.com">Meta</a>
-                      </strong>
-                    </li>
-                    <li>Municipio:
-                      <strong>
-                        <a href="http://startbootstrap.com">Puerto Lopez</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Cerrar</button>
-                </div>
-              </div>
-            </div>
+              <div class="col-lg-8 mx-auto">               
+                <li class="list-inline-item">
+                  <a class="img-fluid" href="#">
+                     <h5>Publica información de tu negocio</h5>
+                  </a>                  
+                  </li>  
+                  <br>                               
+                   <img class="img-fluid img-centered" src="img/proveedor.png" alt="" width="50" height="50"> 
+                  <form name="sentMessage" id="contactForm" novalidate>
+                    <textarea class="form-control" id="obsProveedor" rows="5" required data-validation-required-message="El campo  es requerido." placeholder="Comparte promociones o información de tu negocio en la red de agricultores Colombianos"></textarea>
+                    <p class="help-block text-danger"></p>                    
+                    <br>
+                    <div id="success"></div>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-success btn-lg" id="sentMessage">Publicar</button>
+                  </div>   
+                  </form> 
+             </div>
           </div>
         </div>
-      </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+     </div>
+    </div>
+
+     <div class="portfolio-modal modal fade" id="compartir" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -615,38 +588,30 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h4>Enviar un Mensaje</h4>                  
-                  <img class="img-fluid img-centered" src="img/portfolio/if_mensaje.png" alt="">
-                  <p>Enviele un mensaje a un agricultor especifico, al cual desea preguntar o recomendar</p>
-                  <ul class="list-inline item-details">
-                    <li>Destino:
-                      <strong>
-                        <a href="http://startbootstrap.com">Juan Perez</a>
-                      </strong>
-                    </li>
-                    <li>Asunto:
-                      <strong>
-                        <a href="http://startbootstrap.com">Abono Aguacate</a>
-                      </strong>
-                    </li>
-                    <li>Mensaje:
-                      <strong>
-                        <a href="http://startbootstrap.com">El abono debe ser natural, sin quimicos</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Cerrar</button>
-                </div>
-              </div>
-            </div>
+              <div class="col-lg-8 mx-auto">               
+                <li class="list-inline-item">
+                  <a class="img-fluid" href="#">
+                     <h5>Comparte información</h5>
+                  </a>                  
+                  </li>   
+                  <br>                              
+                  <img class="img-fluid img-centered" src="img/compartir.png" alt="" height="50" width="50">
+                  <form name="sentMessage" id="contactForm" novalidate>
+                    <textarea class="form-control" id="obsAgricultor" rows="5" required data-validation-required-message="El campo  es requerido." placeholder="Comparte tu conocimiento o busca consejo con otros agricultores"></textarea>
+                    <p class="help-block text-danger"></p>                    
+                    <br>
+                    <div id="success"></div>
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-success btn-lg" id="sentMessage">Publicar</button>
+                  </div>   
+                  </form> 
+             </div>
           </div>
         </div>
-      </div>
     </div>
+     </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -689,6 +654,7 @@
         </div>
       </div>
     </div>
+
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -733,6 +699,7 @@
         </div>
       </div>
     </div>
+
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
