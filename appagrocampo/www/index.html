@@ -44,8 +44,12 @@
             **/
             var etiquetas = [];
             var area  = [];
+            var produccion = [];
+            var rendimiento = [];
             var municipio = "";
             var cantidad = [];
+            var por_produccion = [];
+            var por_areac = [];
             
             /**
             Llenar combos con datos de OpenData**/
@@ -68,12 +72,16 @@
 
                 //Traer datos de municipio
 
-                $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=cultivo,sum(area_sembrada_ha)&municipio="+municipio+"&$group=cultivo", function(datos) {            
+                $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=cultivo,sum(area_sembrada_ha),SUM(producci_n_t),SUM(rendimiento_t_ha)&municipio="+municipio+"&$group=cultivo", function(datos) {            
                         $.each(datos, function(id) {                
-                            etiquetas[id] = datos[id]['cultivo'];
-                            area[id]      = datos[id]['sum_area_sembrada_ha'];
+                            etiquetas[id]  = datos[id]['cultivo'];
+                            area[id]       = datos[id]['sum_area_sembrada_ha'];
+                            produccion[id]  = datos[id]['SUM_producci_n_t'];
+                            rendimiento[id] = datos[id]['SUM_rendimiento_t_ha'];
                         });          
-                });      
+                });   
+
+              
                  
 
             });
@@ -131,7 +139,7 @@
                     data: {                    
                         labels: etiquetas,
                         datasets: [{
-                            label: 'Cultivos',                        
+                            label: 'Cultivos Area Cosechada(ha)',                        
                             data: area,
                             backgroundColor: [
                                 'rgba(255, 99, 132, 0.2)',
@@ -186,7 +194,21 @@
                                 'rgba(48,79,254 ,1)'
                             ],
                             borderWidth: 1
-                        }]
+                        },{
+                          type: 'line',
+                          label: 'Producción(ton)',
+                          borderColor: ['rgba(213,0,249 ,1)'],
+                          borderWidth: 2,
+                          fill: false,
+                          data:produccion
+                      },{
+                          type: 'line',
+                          label: 'Rendimiento(ton/ha)',
+                          borderColor: ['rgba(0,230,118 ,1)'],
+                          borderWidth: 2,
+                          fill: false,
+                          data:rendimiento
+                      }]
                     },
                     options: {
                         scales: {
@@ -405,13 +427,9 @@
                         <!--<label>Contraseña</label>-->
                         <input class="form-control Datosusuario" id="contraseña" type="password" placeholder="Ingrese su contraseña" required data-validation-required-message="El campo contraseña es requerido.">
                         <p cslass="help-block text-danger"></p>
-<<<<<<< HEAD
 
-                        <!--<label>Correo Electronico</label>-->
-=======
                        
                         <label>Correo electrónico</label>
->>>>>>> c5932eefeaf26c2da2aaaded5315e6f72a9daa97
                         <input class="form-control Datosusuario" id="email" type="email" placeholder="Ingrese su correo" required data-validation-required-message="El campo correo es requerido.">
                         <p class="help-block text-danger"></p>                
 
