@@ -30,6 +30,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
     <script type="text/javascript" src="js/funciones.js"></script>
+
+
 </head>
 
 <body id="page-top">
@@ -270,6 +272,30 @@
               });               
           }); 
 
+           $("#sendFromPrecios").click(function(){   
+            var datos= $("#cultivoprecio option:selected").val();
+
+              var datos = dataFormToJsonTwo('Cultivos','formprecios');               
+            
+              $.ajax({  async:  false,
+                        type:   "POST",
+                        url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
+                        data:   {   Peticion:   "consultarprecioscultivo",
+                                    Datos:      JSON.stringify(datos)
+                    },
+                    success: function(data){                          
+                       if(data==1){
+                          navigator.notification.alert("Consulta realizada correctamente");
+                      
+                       }else{
+                       //  shortToast("Error al realizar la consvbncvbnulta");
+                         navigator.notification.alert("Error al realizar la consulta");
+                       }                             
+                    }
+              }); 
+
+          }); 
+
         });
     </script>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -280,17 +306,12 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <!--<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Novedades</a>
-            </li>-->
+          <ul class="navbar-nav ml-auto">       
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#login">Iniciar Sesion</a>
-            </li>
-             
+            </li>             
             <li class="nav-item">             
-              <a class="nav-link " href="#registrar" data-toggle="modal">Registrarse</a>
-              
+              <a class="nav-link " href="#registrar" data-toggle="modal">Registrarse</a>              
             </li>
           </ul>
         </div>
@@ -336,38 +357,48 @@
       <div class="container">
         <h4 class="text-center">Novedades</h4>      <br>
         <div class="row">
-          <div class="col-sm-4 portfolio-item">
+          <div class="col-sm-3 portfolio-item">
             <a class="portfolio-link" href="#datosAbiertos" data-toggle="modal">  
             <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="fa fa-search-plus"><h5>datos abiertos</h5></i>
                 </div>   
               </div>          
               <center><img class="img-fluid" src="img/portfolio/if_datos.png" alt=""></center>
             </a>
           </div>
-          <div class="col-sm-4 portfolio-item">
+          <div class="col-sm-3 portfolio-item">
             <a class="portfolio-link" href="#compartir" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="fa fa-search-plus"><h5>Compartir conocimientos</h5></i>
                 </div>
               </div>
               <center><img class="img-fluid" src="img/compartir.png" alt="" height="100" width="100"></center>
             </a>  
           </div>
           
-           <div class="col-sm-4 portfolio-item">
+           <div class="col-sm-3 portfolio-item">
             <a class="portfolio-link" href="#infoProvedor" data-toggle="modal">
               <div class="caption">
                 <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+                  <i class="fa fa-search-plus"><h5>Publica tus productos</h5></i>
                 </div>
               </div>
              <center><img class="img-fluid img-centered" src="img/proveedor.png" alt="" height="100" width="100"></center>
             </a>
           </div>
           
+           <div class="col-sm-3 portfolio-item">
+            <a class="portfolio-link" href="#precios" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus"><h5>Consulta precios</h5></i>
+                </div>
+              </div>
+             <center><img class="img-fluid img-centered" src="img/precios.png" alt="" height="100" width="100"></center>
+            </a>
+          </div>
 
           </div>          
         </div>
@@ -645,7 +676,7 @@
      </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="portfolio-modal modal fade" id="precios" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -655,38 +686,35 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h4>Precios Cultivos</h4>                  
-                  <img class="img-fluid img-centered" src="img/portfolio/if_money.png" alt="">
-                  <p>Conozca los precios en las centrales de abastos de su cultivo</p>
-                  <ul class="list-inline item-details">
-                    <li>Central:
-                      <strong>
-                        <a href="http://startbootstrap.com">Corabastos</a>
-                      </strong>
-                    </li>
-                    <li>Fecha:
-                      <strong>
-                        <a href="http://startbootstrap.com">Septiembre 2017</a>
-                      </strong>
-                    </li>
-                    <li>Precio:
-                      <strong>
-                        <a href="http://startbootstrap.com">$2.000 Kilo</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Cerrar</button>
-                </div>
-              </div>
-            </div>
+              <div class="col-lg-8 mx-auto">               
+                <li class="list-inline-item">
+                  <a class="img-fluid" href="#">
+                     <h5>Conoce los precios de los cultivos por región</h5>
+                  </a>                  
+                  </li>   
+                  <br>                              
+                  <img class="img-fluid img-centered" src="img/precios.png" alt="" height="50" width="50">                                  
+                  <form name="formPrecios" id="formPrecios" novalidate>
+                      <div class="form-group">
+                              <label>Cultivo</label>
+                                <select class="form-control formprecios" id="Cultivo">
+                                    <option value="1">Naranja común</option>
+                                    <option value="2">Uva negra</option>
+                               </select>
+                        </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="text-center">
+                    <button type="button" class="btn btn-success btn-lg" id="sendFromPrecios">Consultar</button>
+                  </div>   
+                  </form> 
+             </div>
           </div>
         </div>
-      </div>
     </div>
+     </div>
+    </div>
+
 
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
