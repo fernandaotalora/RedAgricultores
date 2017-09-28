@@ -52,6 +52,7 @@
             var cantidad = [];
             var por_produccion = [];
             var por_areac = [];
+            var idUsuario;
             
             /**
             Llenar combos con datos de OpenData**/
@@ -248,13 +249,27 @@
 
           }); 
 
-              //Peticiones Ajax para comunicarse con PHP y consultar los precios
+          //Peticion Iniciar Sesion
 
-          $("#IniciarSesion").click(function()
-          {   
-              alert("Bienvenido");
-              document.getElementById("login").style.display = "none";
-              document.getElementById("portfolio").style.display = "block";
+          $("#IniciarSesion").click(function(){   
+              $.ajax({  async:  false,
+                        type:   "POST",
+                        url:    "http://localhost/RedAgricultores/WebServices/WebServices.php",
+                        data:   {   Peticion:   "login",
+                                    Usuario:     $("#usuarioLogin").val(),
+                                    Pass:        $("#contraseñaLogin").val()
+                    },
+                    success: function(data){                          
+                       if(data>1){
+                          alert("Bienvenido");
+                          idUsuario = data;                          
+                          document.getElementById("login").style.display = "none";
+                          document.getElementById("portfolio").style.display = "block";
+                       }else{
+                          alert("Error Inicio Sesion");
+                       }
+                    }
+              });               
           }); 
 
            $("#sendFromPrecios").click(function(){   
