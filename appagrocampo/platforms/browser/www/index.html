@@ -240,7 +240,8 @@
                     success: function(data){                          
                        if(data==1){
                           alert("Registrado Correctamente");
-                          $('.Datosusuario').val("");
+                       
+                           $("#registrar").modal('hide');
                        }else{
                           alert("Fallo Registro Datos");
                        }                             
@@ -252,9 +253,9 @@
           //Peticion Iniciar Sesion
 
           $("#IniciarSesion").click(function(){   
-              $.ajax({  async:  false,
+             /* $.ajax({  async:  false,
                         type:   "POST",
-                        url:    "http://localhost/RedAgricultores/WebServices/WebServices.php",
+                        url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
                         data:   {   Peticion:   "login",
                                     Usuario:     $("#usuarioLogin").val(),
                                     Pass:        $("#contraseñaLogin").val()
@@ -267,12 +268,17 @@
                           document.getElementById("portfolio").style.display = "block";
                        }else{
                           alert("Error Inicio Sesion");
+                           document.getElementById("login").style.display = "none";
+                          document.getElementById("portfolio").style.display = "block";
                        }
                     }
-              });               
+              });  */        
+              document.getElementById("login").style.display = "none";
+              document.getElementById("portfolio").style.display = "block";     
+              document.getElementById("foros").style.display = "block";  
           }); 
 
-           $("#sendFromPrecios").click(function(){   
+          $("#sendFromPrecios").click(function(){   
             var datos= $("#cultivoprecio option:selected").val();
 
               var datos = dataFormToJsonTwo('Cultivos','formprecios');               
@@ -288,13 +294,60 @@
                           navigator.notification.alert("Consulta realizada correctamente");
                       
                        }else{
-                       //  shortToast("Error al realizar la consvbncvbnulta");
+                      
                          navigator.notification.alert("Error al realizar la consulta");
                        }                             
                     }
               }); 
 
-          }); 
+          });
+
+          $("#publicarMensaje").click(function(){                    
+              div = document.getElementById('Comentarios');
+
+              var newlink = document.createElement('a');
+              var nodoTexto = document.createTextNode($("#obsAgricultor").val());
+              var br  = document.createElement('br');
+              newlink.setAttribute('class', 'nav-link');
+              newlink.setAttribute('href', '#comentar');
+              newlink.setAttribute('data-toggle', 'modal');
+              newlink.appendChild(nodoTexto);
+              div.appendChild(newlink);
+              //div.appendChild(br);
+
+              $("#tituloForo").text($("#obsAgricultor").val());
+              $("#obsAgricultor").val("");
+          });
+           $(document).ready(function ()
+           {
+              $(":checkbox").click(function () {
+                  var thisVar = $(this);
+                  var id = thisVar.attr('id');
+                  var isChecked = thisVar.is(':checked');
+                  if (isChecked)
+                    document.getElementById("btnGuardar").style.display = "block"; 
+                  else
+                    document.getElementById("btnGuardar").style.display = "none"; 
+                  $("#Terminos").modal('hide');
+
+                  
+              });
+          });
+
+
+          $("#opinarComentario").click(function(){                    
+              div = document.getElementById('Opiniones');
+
+              var newText = document.createElement('label');
+              var nodoTexto = document.createTextNode($("#respuestaComentario").val());
+              var br  = document.createElement('br');              
+              newText.appendChild(nodoTexto);
+              div.appendChild(newText);
+              div.appendChild(br);
+
+              $("#respuestaComentario").val("");
+              
+          });  
 
         });
     </script>
@@ -408,7 +461,7 @@
 
     <!-- login Section -->
     <section class="success" id="login">
-    <div class="container">
+      <div class="container">
         <h4 class="text-center">Iniciar sesión</h4>        
         <div class="row">
         <div class="col-sm-4 ">
@@ -434,7 +487,7 @@
     </section>
 
     <!-- modal para registro de nuevo usuario -->
-        <div class="portfolio-modal modal fade" id="registrar" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="registrar" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -445,7 +498,7 @@
           <div class="container">
           <li class="list-inline-item">
             <a class="img-fluid" href="#">
-              <h5>Registrar nuevo usuario</h5>
+              <h3>Registrar nuevo usuario</h3>
             </a>                  
           </li> 
          
@@ -530,9 +583,13 @@
                         <textarea class="form-control Datosusuario" id="sobreti" rows="5" placeholder="Cuentanos de ti"></textarea>
                         <p class="help-block text-danger"></p>
 
+          
                         <br>
+                         <div data-role="main" class="ui-content">
+                            <a href="#Terminos" data-toggle="modal">Aceptar términos y condiciones</a>
+                        </div>
                         <div id="success"></div>
-                        <div class="form-group">
+                        <div id="btnGuardar" class="form-group" style="display: none" >
                           <button type="button" class="btn btn-success btn-lg" id="sendMessageForm">Guardar</button>
                         </div>
                       </div>                                                         
@@ -544,24 +601,9 @@
       </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="text-center">
-      <div class="footer-above">
-        <div class="container">
-          <div class="row">            
-          </div>
-        </div>
-      </div>
-      <div class="footer-below">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              Copyright &copy; RedAgricultores Grupo FYJ 2017
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- modal para hacer comentarios sobre un tema propuesto-->  
+
+ 
    
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="datosAbiertos" tabindex="-1"  aria-hidden="true">
@@ -642,7 +684,7 @@
      </div>
     </div>
 
-     <div class="portfolio-modal modal fade" id="compartir" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="compartir" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -653,30 +695,33 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">               
-                <li class="list-inline-item">
-                  <a class="img-fluid" href="#">
-                     <h5>Comparte información</h5>
-                  </a>                  
+                  <li class="list-inline-item">
+                    <a class="img-fluid" href="#">
+                       <h5>Comparte información</h5>
+                    </a>                  
                   </li>   
                   <br>                              
                   <img class="img-fluid img-centered" src="img/compartir.png" alt="" height="50" width="50">
                   <form name="sentMessage" id="contactForm" novalidate>
-                    <textarea class="form-control" id="obsAgricultor" rows="5" required data-validation-required-message="El campo  es requerido." placeholder="Comparte tu conocimiento o busca consejo con otros agricultores"></textarea>
+                    <textarea class="form-control" id="obsAgricultor" rows="2" required data-validation-required-message="El campo  es requerido." placeholder="Comparte tu conocimiento o busca consejo con otros agricultores"></textarea>
                     <p class="help-block text-danger"></p>                    
                     <br>
                     <div id="success"></div>
                     <div class="text-center">
-                    <button type="submit" class="btn btn-success btn-lg" id="sentMessage">Publicar</button>
-                  </div>   
+                      <button type="button" class="btn btn-success btn-lg" id="publicarMensaje">Publicar</button>
+                    </div>   
                   </form> 
-             </div>
-          </div>
+                   <br><br> 
+                  <div id="Comentarios" style="text-align:left">
+                  </div>                  
+              </div>
+            </div>
+          </div>         
         </div>
-    </div>
-     </div>
+      </div>
     </div>
 
-      <div class="portfolio-modal modal fade" id="precios" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="precios" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -715,9 +760,41 @@
      </div>
     </div>
 
-
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="Terminos" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">  
+               <center><img class="img-fluid img-centered" src="img/aviso.png" alt="" height="100" width="100"></center>
+
+                <P ALIGN="justify">
+                  La presente Política de Privacidad establece los términos en que RedAgricultores usa y protege la información que es proporcionada por sus usuarios al momento de utilizar la app Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+
+                  Información que es recogida
+
+                  Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,  información de contacto como  su dirección de correo electrónica e información demográfica. 
+
+                  Uso de la información recogida
+
+                  Nuestro app emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.  Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.
+
+                  RedAgricultores está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado. </p>
+
+                  <label for="chk1">
+                      <input type="checkbox" name="chAcepto" id="cchAcepto" value="chAcepto">      Acepto</label>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+      <div class="modal-dialog" role="document" style="display: none" id="foros">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -728,31 +805,26 @@
             <div class="row">
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
-                  <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/safe.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
+                  <li class="list-inline-item">
+                    <a class="img-fluid" href="#">
+                       <h5 id="tituloForo">Opinar sobre el tema propuesto</h5>
+                    </a>                  
+                  </li>   
+                  <br>                              
+                  <img class="img-fluid img-centered" src="img/compartir.png" alt="" height="50" width="50">
+                  <form name="sentMessage" id="contactForm" novalidate>
+                      <div class="control-group">                                        
+                          <textarea class="form-control Datosusuario" id="respuestaComentario" rows="2" placeholder="Danos tu opinion sobre el tema"></textarea>
+                          <p class="help-block text-danger"></p>
+                          <br>
+                          <div id="success"></div>
+                          <div class="form-group">
+                            <button type="button" class="btn btn-success btn-lg" id="opinarComentario">Opinar</button>
+                          </div>
+                      </div>                                                         
+                  </form>
+                  <div id="Opiniones" style="text-align:left">
+                  </div>
                 </div>
               </div>
             </div>
@@ -761,51 +833,24 @@
       </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
+     <!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">            
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Project Title</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/submarine.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                    <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              Copyright &copy; RedAgricultores Grupo FYJ 2017
             </div>
           </div>
         </div>
       </div>
-    </div>
-
+    </footer>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
