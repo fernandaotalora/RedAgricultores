@@ -254,7 +254,7 @@
           $("#IniciarSesion").click(function(){   
               $.ajax({  async:  false,
                         type:   "POST",
-                        url:    "http://localhost/RedAgricultores/WebServices/WebServices.php",
+                        url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
                         data:   {   Peticion:   "login",
                                     Usuario:     $("#usuarioLogin").val(),
                                     Pass:        $("#contraseñaLogin").val()
@@ -267,6 +267,8 @@
                           document.getElementById("portfolio").style.display = "block";
                        }else{
                           alert("Error Inicio Sesion");
+                           document.getElementById("login").style.display = "none";
+                          document.getElementById("portfolio").style.display = "block";
                        }
                     }
               });               
@@ -295,6 +297,22 @@
               }); 
 
           }); 
+
+           $(document).ready(function ()
+           {
+              $(":checkbox").click(function () {
+                  var thisVar = $(this);
+                  var id = thisVar.attr('id');
+                  var isChecked = thisVar.is(':checked');
+                  if (isChecked)
+                    document.getElementById("btnGuardar").style.display = "block"; 
+                  else
+                    document.getElementById("btnGuardar").style.display = "none"; 
+                  $("#Terminos").modal('hide');
+
+                  
+              });
+          });
 
         });
     </script>
@@ -445,7 +463,7 @@
           <div class="container">
           <li class="list-inline-item">
             <a class="img-fluid" href="#">
-              <h5>Registrar nuevo usuario</h5>
+              <h3>Registrar nuevo usuario</h3>
             </a>                  
           </li> 
          
@@ -530,9 +548,13 @@
                         <textarea class="form-control Datosusuario" id="sobreti" rows="5" placeholder="Cuentanos de ti"></textarea>
                         <p class="help-block text-danger"></p>
 
+          
                         <br>
+                         <div data-role="main" class="ui-content">
+                            <a href="#Terminos" data-toggle="modal">Aceptar términos y condiciones</a>
+                        </div>
                         <div id="success"></div>
-                        <div class="form-group">
+                        <div id="btnGuardar" class="form-group" style="display: none" >
                           <button type="button" class="btn btn-success btn-lg" id="sendMessageForm">Guardar</button>
                         </div>
                       </div>                                                         
@@ -715,7 +737,40 @@
      </div>
     </div>
 
+    <div class="portfolio-modal modal fade" id="Terminos" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">  
+               <center><img class="img-fluid img-centered" src="img/aviso.png" alt="" height="100" width="100"></center>
 
+                <P ALIGN="justify">
+                  La presente Política de Privacidad establece los términos en que RedAgricultores usa y protege la información que es proporcionada por sus usuarios al momento de utilizar la app Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+
+                  Información que es recogida
+
+                  Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,  información de contacto como  su dirección de correo electrónica e información demográfica. 
+
+                  Uso de la información recogida
+
+                  Nuestro app emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.  Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.
+
+                  RedAgricultores está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado. </p>
+
+                  <label for="chk1">
+                      <input type="checkbox" name="chAcepto" id="cchAcepto" value="chAcepto">      Acepto</label>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
