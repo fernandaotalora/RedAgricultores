@@ -53,9 +53,12 @@
             var por_produccion = [];
             var por_areac = [];
             var idUsuario;
+            var nombreUsuario;
+            var hoy;
+            var fecha =[];
+            var idTemaSeleccionado;
             
-            /**
-            Llenar combos con datos de OpenData**/
+            /**Llenar combos con datos de OpenData**/
 
             $.getJSON("https://www.datos.gov.co/resource/js4i-vb8m.json?$select=municipio&$group=municipio&$order=municipio", function(datos) {            
                 $.each(datos, function(id,municipio) {                
@@ -82,12 +85,27 @@
                             produccion[id]  = datos[id]['SUM_producci_n_t'];
                             rendimiento[id] = datos[id]['SUM_rendimiento_t_ha'];
                         });          
-                });   
+                }); 
 
-              
-                 
+                var canvas = document.getElementById("newChart");
+                var ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+                var canvas = document.getElementById("myChart");
+                var ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
             });
+
+            function calcularPorcentajes(){
+              var total = 0;
+                for(i=0;i<produccion.length;i++){
+                    total = total + parseFloat(produccion[i]);
+                }
+
+                for(j=0;j<produccion.length;j++){
+                    por_produccion[j] = ((parseFloat(produccion[j])*100)/total).toFixed(2);
+                }              
+            }
       
            
             $("#cultivo").change(function() {
@@ -101,22 +119,32 @@
                             cantidad[3] = datos[id]['rendimiento_t_ha'] ;
                         });          
                 });   
+                
+                var canvas = document.getElementById("newChart");
+                var ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                var canvas = document.getElementById("myChart");
+                var ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
 
                 if(opcion=="Todos"){                
                     graficarMunicipios();    
+                    calcularPorcentajes();
+                    graficarPorcentajesProduccion();
                 }else{                
                     graficarCultivos();
                 }            
             });
 
-            /**
-            Funciones para realizar las graficas **/        
+            /**Funciones para realizar las graficas **/    
+
             function graficarCultivos(){
                 var ctx = document.getElementById("myChart");
                 var myChart = new Chart(ctx, {
                     type: 'pie',
                     data: {
-                        labels: ["Area Sembrada (ha)", "Area Cosechada (ha)", "Producción(t)", "Rendimiento(t/ha)"],
+                        labels: ["Area Sembrada (ha)", "Area Cosechada (ha)", "Producción(ton)", "Rendimiento(ton/ha)"],
                         datasets: [{
                             label: 'Producción',                        
                             data: cantidad,
@@ -220,12 +248,67 @@
                                     beginAtZero:true
                                 }
                             }]
+                        },
+                        title: {
+                            display: true,
+                            text: 'Relacion Area - Porcentaje - Produccion'
                         }
                     }
                 });    
-            }          
+            }     
+
+
+            function graficarPorcentajesProduccion(){
+                var ctx = document.getElementById("newChart");
+                var myChart = new Chart(ctx, {
+                    type: 'pie',
+                    data: {
+                        labels: etiquetas,
+                        datasets: [{
+                            label: 'Produccion (%)',                        
+                            data: por_produccion,
+                            backgroundColor: [
+                                'rgba(255,99,132,1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)',
+                                'rgba(139, 195, 74 ,1)',
+                                'rgba(233, 30, 99 ,1)',
+                                'rgba(41,121,255 ,1)',
+                                'rgba(255,234,0 ,1)',
+                                'rgba(213,0,249 ,1)',
+                                'rgba(255,193,7 ,1)',
+                                'rgba(0,229,255 ,1)',
+                                'rgba(211,47,47 ,1)',
+                                'rgba(56,142,60 ,1)',
+                                'rgba(255,112,67 ,1)',
+                                'rgba(0,230,118 ,1)',
+                                'rgba(161,136,127 ,1)',
+                                'rgba(213,0,249 ,1)',
+                                'rgba(48,79,254 ,1)',
+                                'rgba(255,193,7 ,1)',
+                                'rgba(129,199,132 ,1)',
+                                'rgba(236,64,122 ,1)',
+                                'rgba(48,79,254 ,1)'
+                            ]
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        legend: {
+                            display: false
+                        },
+                        title: {
+                            display: true,
+                            text: 'Porcentaje Producción Cultivos'
+                        }
+                    }
+                });
+            }     
      
-            //Peticiones Ajax para comunicarse con PHP
+          //Peticiones Ajax para comunicarse con PHP y realizar Registro Usuario
 
           $("#sendMessageForm").click(function(){   
 
@@ -253,7 +336,9 @@
           //Peticion Iniciar Sesion
 
           $("#IniciarSesion").click(function(){   
-             /* $.ajax({  async:  false,
+            nombreUsuario = $("#usuarioLogin").val();
+
+              $.ajax({  async:  false,
                         type:   "POST",
                         url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
                         data:   {   Peticion:   "login",
@@ -263,20 +348,17 @@
                     success: function(data){                          
                        if(data>1){
                           alert("Bienvenido");
-                          idUsuario = data;                          
+                          idUsuario = data;
                           document.getElementById("login").style.display = "none";
                           document.getElementById("portfolio").style.display = "block";
                        }else{
-                          alert("Error Inicio Sesion");
-                           document.getElementById("login").style.display = "none";
-                          document.getElementById("portfolio").style.display = "block";
+                          alert("Error Inicio Sesion");                          
                        }
                     }
-              });  */        
-              document.getElementById("login").style.display = "none";
-              document.getElementById("portfolio").style.display = "block";     
-              document.getElementById("foros").style.display = "block";  
+              });                
           }); 
+
+          //Peticion para guardar los precioes
 
           $("#sendFromPrecios").click(function(){   
             var datos= $("#cultivoprecio option:selected").val();
@@ -302,24 +384,137 @@
 
           });
 
-          $("#publicarMensaje").click(function(){                    
+
+          /** Mostrar los temas anteriores cuando recargue la pagina**/
+
+          $.ajax({  async:  false,
+                    type:   "POST",
+                    dataType: "json",
+                    url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
+                    data:   {   Peticion:   "getTemas"
+                    },
+                    success: function(data){                          
+                      div = document.getElementById('Comentarios');
+                       for(i=0;i<data.length;i++){        
+                          fecha = data[i]['fecha'].split(" ");                                 
+                          var newlink = document.createElement('a');
+                          var nodoTexto = document.createTextNode(fecha[0]+" - "+data[i]['usuario']+" - "+data[i]['descripcion']);
+                          var br  = document.createElement('br');
+                          newlink.setAttribute('class', 'nav-link');
+                          newlink.setAttribute('href', '#comentar');
+                          newlink.setAttribute('data-toggle', 'modal');
+                          newlink.setAttribute('id',data[i]['id']);
+                          newlink.setAttribute('title',data[i]['descripcion']);
+                          newlink.appendChild(nodoTexto);
+                          div.appendChild(newlink);
+                       }
+                    }
+          });
+
+          //Peticciones para realizar el foro y omentarios sobre el foro.
+
+          $("#publicarMensaje").click(function(){  
+              hoy = new Date();
               div = document.getElementById('Comentarios');
 
-              var newlink = document.createElement('a');
-              var nodoTexto = document.createTextNode($("#obsAgricultor").val());
-              var br  = document.createElement('br');
-              newlink.setAttribute('class', 'nav-link');
-              newlink.setAttribute('href', '#comentar');
-              newlink.setAttribute('data-toggle', 'modal');
-              newlink.appendChild(nodoTexto);
-              div.appendChild(newlink);
-              //div.appendChild(br);
+              $.ajax({  async:  false,
+                        type:   "POST",
+                        url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
+                        data:   {   Peticion:   "RegistrarTema",
+                                    idUsuario:  idUsuario,
+                                    Tema:       $("#obsAgricultor").val()
+                    },
+                    success: function(data){                                                                  
+                       if(data>1){
 
-              $("#tituloForo").text($("#obsAgricultor").val());
-              $("#obsAgricultor").val("");
+                          var newlink = document.createElement('a');
+                          var nodoTexto = document.createTextNode(hoy.getDate()+"/"+(hoy.getMonth()+1)+"/"+hoy.getFullYear()+" - "+nombreUsuario+" - "+$("#obsAgricultor").val());
+                          var br  = document.createElement('br');
+                          newlink.setAttribute('class', 'nav-link');
+                          newlink.setAttribute('href', '#comentar');
+                          newlink.setAttribute('data-toggle', 'modal');
+                          newlink.setAttribute('title', $("#obsAgricultor").val());
+                          newlink.setAttribute('id',data);
+                          newlink.appendChild(nodoTexto);
+                          div.appendChild(newlink);
+
+                          $("#obsAgricultor").val("");
+                          
+                       }else{
+                          alert("Error Registrando el Tema");                          
+                       }
+                    }
+              });                                                         
+           
           });
-           $(document).ready(function ()
-           {
+           
+          $("#opinarComentario").click(function(){   
+              hoy = new Date();                 
+              div = document.getElementById('Opiniones');
+
+              $.ajax({  async:  false,
+                        type:   "POST",
+                        url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
+                        data:   {   Peticion:   "RegistrarComentario",
+                                    idTema:     idTemaSeleccionado,
+                                    Comentario: $("#respuestaComentario").val(),
+                                    Usuario:    nombreUsuario 
+                    },
+                    success: function(data){                                                                  
+                       if(data=>1){
+
+                          var newText = document.createElement('label');
+                          var nodoTexto = document.createTextNode(hoy.getDate()+"/"+(hoy.getMonth()+1)+"/"+hoy.getFullYear()+" - "+nombreUsuario+" - "+$("#respuestaComentario").val());
+                          var br  = document.createElement('br');              
+                          newText.appendChild(nodoTexto);
+                          div.appendChild(newText);
+                          div.appendChild(br);
+
+                          $("#respuestaComentario").val("");
+                          
+                       }else{
+                          alert("Error Registrando el Comentario");                          
+                       }
+                    }
+              });               
+              
+          });  
+
+          $("a").click(function() {
+              document.getElementById('Opiniones').innerHTML='';
+              div = document.getElementById('Opiniones');
+              idTemaSeleccionado = $(this).attr("id");                  
+              var title = $(this).attr("title");    
+              $("#tituloForo").text(title);        
+              
+              if(idTemaSeleccionado=>1){
+                  $.ajax({  async:  false,
+                        type:   "POST",
+                        dataType: "json",
+                        url:    "http://104.200.28.188/RedAgricultores/WebServices/WebServices.php",
+                        data:   {   Peticion:   "getComentarios",
+                                    idTema:     idTemaSeleccionado
+                    },
+                    success: function(data){                            
+                           for(i=0;i<data.length;i++){ 
+
+                              var newText = document.createElement('label');
+                              var nodoTexto = document.createTextNode(data[i]['fecha']+" - "+data[i]['usuario']+" - "+data[i]['descripcion']);
+                              var br  = document.createElement('br');              
+                              newText.appendChild(nodoTexto);
+                              div.appendChild(newText);
+                              div.appendChild(br);
+                                                    
+                           }
+                        }
+                  });
+              }
+              
+          });
+
+          //Validar politica de privacidad
+
+          $(document).ready(function (){
               $(":checkbox").click(function () {
                   var thisVar = $(this);
                   var id = thisVar.attr('id');
@@ -330,24 +525,8 @@
                     document.getElementById("btnGuardar").style.display = "none"; 
                   $("#Terminos").modal('hide');
 
-                  
               });
           });
-
-
-          $("#opinarComentario").click(function(){                    
-              div = document.getElementById('Opiniones');
-
-              var newText = document.createElement('label');
-              var nodoTexto = document.createTextNode($("#respuestaComentario").val());
-              var br  = document.createElement('br');              
-              newText.appendChild(nodoTexto);
-              div.appendChild(newText);
-              div.appendChild(br);
-
-              $("#respuestaComentario").val("");
-              
-          });  
 
         });
     </script>
@@ -638,6 +817,7 @@
                   </select>
 
                   <canvas id="myChart" width="400" height="400"></canvas>
+                  <canvas id="newChart" width="400" height="400"></canvas>
                   <br>
                   <button class="btn btn-success" type="button" data-dismiss="modal">
                     <i class="fa fa-times"></i>
@@ -771,9 +951,9 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">  
-               <center><img class="img-fluid img-centered" src="img/aviso.png" alt="" height="100" width="100"></center>
+                  <center><img class="img-fluid img-centered" src="img/aviso.png" alt="" height="100" width="100"></center>
 
-                <P ALIGN="justify">
+                  <P ALIGN="justify">
                   La presente Política de Privacidad establece los términos en que RedAgricultores usa y protege la información que es proporcionada por sus usuarios al momento de utilizar la app Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
 
                   Información que es recogida
@@ -787,14 +967,18 @@
                   RedAgricultores está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado. </p>
 
                   <label for="chk1">
-                      <input type="checkbox" name="chAcepto" id="cchAcepto" value="chAcepto">      Acepto</label>
-                  </div>
+                      <input type="checkbox" name="chAcepto" id="cchAcepto" value="chAcepto">      Acepto
+                  </label>
                 </div>
               </div>
-           </div>
+            </div>
+          </div>
         </div>
+      </div>      
     </div>
-      <div class="modal-dialog" role="document" style="display: none" id="foros">
+
+    <div class="portfolio-modal modal fade" id="comentar" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -865,6 +1049,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+
+   
 
 </body>
 
